@@ -11,7 +11,7 @@
 #include "mcal_init.h"
 #include "asw_com.h"
 
-T_U16 a = 0;
+#include "light_sig.h"
 
 void TASK_Inits()
 {
@@ -30,13 +30,13 @@ void TASK_5ms()
 }
 
 void TASK_10ms()
-{   
-
+{
+    light_battery_low();
 }
 
 void TASK_100ms()
 { 
-    
+
 }
 
 void TASK_500ms()
@@ -46,6 +46,5 @@ void TASK_500ms()
 
 void TASK_1000ms()
 {
-    a = !a;
-    GPIO_u8WritePortPin(PORT_A, 10, a);
+
 }
