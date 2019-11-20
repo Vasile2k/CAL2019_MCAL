@@ -13,4 +13,5 @@ build/default/production/_ext/1472/sys_tasks.o:  \
 ../mcal_timers.h  \
 ../mcal_encoder.h  \
  ../asw_com.h  \
-../light_sig.h 
+../light_sig.h  \
+../asw_move.h 
