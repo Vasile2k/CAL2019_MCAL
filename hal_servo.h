@@ -21,7 +21,7 @@ extern void HAL_vServoInit(void);
 
 /**
  * Sets the servo position accordingly
- * @param position servo position between 10 and 170
+ * @param position servo position between 50 and 130
  */
 extern void HAL_vServoSetPosition(T_F16 position);
 

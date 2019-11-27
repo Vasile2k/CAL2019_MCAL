@@ -7,10 +7,10 @@ void HAL_vServoInit(void){
 }
 
 void HAL_vServoSetPosition(T_F16 position){
-    // Translate from [10; 170] to duty cycle between [4, 11]
+    // Translate from [50; 130] to duty cycle between [4, 11]
     T_F16 duty = 7.5 + ((position - 90)/80) * 3.5;
-    // Make sure values is not out of range
-    duty = clamp(duty, 4, 11);
+    // Make sure value is not out of range
+    duty = clamp(duty, (T_F16)6.15, (T_F16)8.81);
     // And set PWM
     PWM1_vSetDuty(duty, 1);
 }

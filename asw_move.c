@@ -44,16 +44,10 @@ void ASW_moveAround(void){
 void ASW_turnWheels(void){
     static T_U16 time = 0;
     
-    if(time < 30){
-        RTE_vServoSetPosition(15 + time * 50);
-    }else if(time < 60){
-        RTE_vServoSetPosition(165 - (time - 60) * 50);
-    }else if(time < 70){
-        RTE_vServoSetPosition(15 + (time - 70) * 150);
+    if(time < 40){
+        RTE_vServoSetPosition(50 + time * 2);
     }else if(time < 80){
-        RTE_vServoSetPosition(165 - (time - 80) * 150);
-    }else if(time < 120){
-        RTE_vServoSetPosition(90);
+        RTE_vServoSetPosition(130 - (time - 40) * 2);
     }else{
         time = 0;
     }
