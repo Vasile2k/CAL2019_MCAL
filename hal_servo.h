@@ -13,8 +13,16 @@ extern "C" {
 #endif
 
 #include "general.h"
-    
+
+/**
+ * Initializes PWM1 if not already init
+ */
 extern void HAL_vServoInit(void);
+
+/**
+ * Sets the servo position accordingly
+ * @param position servo position between 10 and 170
+ */
 extern void HAL_vServoSetPosition(T_F16 position);
 
 #ifdef	__cplusplus
