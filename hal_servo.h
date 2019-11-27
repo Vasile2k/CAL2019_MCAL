@@ -15,7 +15,7 @@ extern "C" {
 #include "general.h"
 
 /**
- * Initializes PWM1 if not already init
+ * Initializes PWM1
  */
 extern void HAL_vServoInit(void);
 

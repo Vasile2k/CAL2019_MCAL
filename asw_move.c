@@ -23,13 +23,33 @@ void ASW_moveAround(void){
         RTE_vMotorSetDir(BACKWARD);
         RTE_vMotorSetSpeed(100 - 10*((time-90)/3));
     }else if(time < 130){
-        RTE_vServoSetPosition(25);
+        RTE_vServoSetPosition(30);
     }else if(time < 140){
-        RTE_vServoSetPosition(50);
+        RTE_vServoSetPosition(90);
     }else if(time < 140){
-        RTE_vServoSetPosition(75);
+        RTE_vServoSetPosition(150);
     }else if(time < 200){
         
+    }else{
+        time = 0;
+    }
+    
+    ++time;
+}
+
+extern void ASW_turnWheels(void){
+    static T_U16 time = 0;
+    
+    if(time < 30){
+        RTE_vServoSetPosition(15 + time * 50);
+    }else if(time < 60){
+        RTE_vServoSetPosition(165 - (time - 30) * 50);
+    }else if(time < 70){
+        RTE_vServoSetPosition(15 + (time - 70) * 150);
+    }else if(time < 80){
+        RTE_vServoSetPosition(165 - (time - 80) * 150);
+    }else if(time < 120){
+        RTE_vServoSetPosition(90);
     }else{
         time = 0;
     }

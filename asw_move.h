@@ -15,6 +15,7 @@ extern "C" {
 // every 100 ms
 extern void ASW_moveInit(void);
 extern void ASW_moveAround(void);
+extern void ASW_turnWheels(void);
 
 #ifdef	__cplusplus
 }

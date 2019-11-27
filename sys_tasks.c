@@ -39,7 +39,8 @@ void TASK_10ms()
 
 void TASK_100ms()
 { 
-    ASW_moveAround();
+//    ASW_moveAround();
+    ASW_turnWheels();
 }
 
 void TASK_500ms()

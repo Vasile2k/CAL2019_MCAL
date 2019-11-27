@@ -3,7 +3,7 @@
 #include "math_helper.h"
 
 void HAL_vServoInit(void){
-    
+    PWM1_vInit();
 }
 
 void HAL_vServoSetPosition(T_F16 position){
