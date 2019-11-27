@@ -6,6 +6,10 @@ void ASW_moveInit(void){
     RTE_vMotorInit();
 }
 
+void ASW_dirInit(void){
+    RTE_vServoInit();
+}
+
 void ASW_moveAround(void){
     
     static T_U16 time = 0;
@@ -37,13 +41,13 @@ void ASW_moveAround(void){
     ++time;
 }
 
-extern void ASW_turnWheels(void){
+void ASW_turnWheels(void){
     static T_U16 time = 0;
     
     if(time < 30){
         RTE_vServoSetPosition(15 + time * 50);
     }else if(time < 60){
-        RTE_vServoSetPosition(165 - (time - 30) * 50);
+        RTE_vServoSetPosition(165 - (time - 60) * 50);
     }else if(time < 70){
         RTE_vServoSetPosition(15 + (time - 70) * 150);
     }else if(time < 80){

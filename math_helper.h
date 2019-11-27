@@ -12,7 +12,9 @@
 extern "C" {
 #endif
 
-__forceinline T_F16 clamp(T_F16 val, T_F16 min, T_F16 max);
+#include "general.h"
+    
+T_F16 clamp(T_F16 val, T_F16 min, T_F16 max) __attribute__((always_inline));
 
 #ifdef	__cplusplus
 }

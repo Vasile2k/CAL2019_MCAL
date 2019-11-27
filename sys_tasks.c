@@ -19,7 +19,8 @@ void TASK_Inits()
 {
     MCAL_vInit();
     GPIO_u8SetPortPin(PORT_A, 10, DIGITAL ,OUTPUT);
-    ASW_moveInit();
+//    ASW_moveInit();
+    ASW_dirInit();
 }
 
 void TASK_1ms()

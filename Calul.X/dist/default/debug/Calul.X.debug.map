@@ -4,9 +4,14 @@ Tool Name:
   c:\program files (x86)\microchip\xc16\v1.36\bin\bin\..\bin/elf-ld.exe
 
 Command:
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000cec.00 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000cec.01 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000cec.02 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000cec.03 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000cec.04 \
   -p33FJ128MC804 \
   -o \
-  dist/default/production/Calul.X.production.elf \
+  dist/default/debug/Calul.X.debug.elf \
   -Lc:/program files (x86)/microchip/xc16/v1.36/bin/bin/.. \
   -Lc:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib \
   -Lc:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../support/PIC24E/gld \
@@ -16,27 +21,29 @@ Command:
   -Lc:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../support/dsPIC33C/gld \
   -Lc:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../support/dsPIC33E/gld \
   -Lc:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../support/dsPIC33F/gld \
-  build/default/production/_ext/1472/asw_com.o \
-  build/default/production/_ext/1472/hal_nRF.o \
-  build/default/production/_ext/1472/main.o \
-  build/default/production/_ext/1472/mcal_adc.o \
-  build/default/production/_ext/1472/mcal_encoder.o \
-  build/default/production/_ext/1472/mcal_gpio.o \
-  build/default/production/_ext/1472/mcal_init.o \
-  build/default/production/_ext/1472/mcal_interrupts.o \
-  build/default/production/_ext/1472/mcal_osc.o \
-  build/default/production/_ext/1472/mcal_pwm.o \
-  build/default/production/_ext/1472/mcal_spi.o \
-  build/default/production/_ext/1472/mcal_timers.o \
-  build/default/production/_ext/1472/sys_schedule.o \
-  build/default/production/_ext/1472/sys_tasks.o \
-  build/default/production/_ext/1472/light_sig.o \
-  build/default/production/_ext/1472/hal_dc.o \
-  build/default/production/_ext/1472/asw_move.o \
-  build/default/production/_ext/1472/hal_servo.o \
-  build/default/production/_ext/1472/math_helper.o \
+  build/default/debug/_ext/1472/asw_com.o \
+  build/default/debug/_ext/1472/hal_nRF.o \
+  build/default/debug/_ext/1472/main.o \
+  build/default/debug/_ext/1472/mcal_adc.o \
+  build/default/debug/_ext/1472/mcal_encoder.o \
+  build/default/debug/_ext/1472/mcal_gpio.o \
+  build/default/debug/_ext/1472/mcal_init.o \
+  build/default/debug/_ext/1472/mcal_interrupts.o \
+  build/default/debug/_ext/1472/mcal_osc.o \
+  build/default/debug/_ext/1472/mcal_pwm.o \
+  build/default/debug/_ext/1472/mcal_spi.o \
+  build/default/debug/_ext/1472/mcal_timers.o \
+  build/default/debug/_ext/1472/sys_schedule.o \
+  build/default/debug/_ext/1472/sys_tasks.o \
+  build/default/debug/_ext/1472/light_sig.o \
+  build/default/debug/_ext/1472/hal_dc.o \
+  build/default/debug/_ext/1472/asw_move.o \
+  build/default/debug/_ext/1472/hal_servo.o \
+  build/default/debug/_ext/1472/math_helper.o \
   --defsym=__MPLAB_BUILD=1 \
-  -Tp33FJ128MC804.gld.00 \
+  --defsym=__MPLAB_DEBUG=1 \
+  --defsym=__DEBUG=1 \
+  -Tp33FJ128MC804.gld.05 \
   --stack=16 \
   --check-sections \
   --data-init \
@@ -48,10 +55,10 @@ Command:
   --stackguard=16 \
   --no-force-link \
   --smart-io \
-  -Map=dist/default/production/Calul.X.production.map \
+  -Map=dist/default/debug/Calul.X.debug.map \
   --report-mem \
   --memorysummary \
-  dist/default/production/memoryfile.xml \
+  dist/default/debug/memoryfile.xml \
   -start-group \
   --library=lega-pic30-elf \
   --library=m-elf \
@@ -69,19 +76,19 @@ c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt_start_mode_normal.Leo)
                               (__crt_start_mode_normal)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
-                              build/default/production/_ext/1472/hal_nRF.o (___delay32)
+                              build/default/debug/_ext/1472/hal_nRF.o (___delay32)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(addsf3.eo)
-                              build/default/production/_ext/1472/mcal_pwm.o (___subsf3)
+                              build/default/debug/_ext/1472/mcal_pwm.o (___subsf3)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(divsf3.eo)
-                              build/default/production/_ext/1472/mcal_pwm.o (___divsf3)
+                              build/default/debug/_ext/1472/mcal_pwm.o (___divsf3)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(feqltle.eo)
-                              build/default/production/_ext/1472/mcal_pwm.o (___eqsf2)
+                              build/default/debug/_ext/1472/mcal_pwm.o (___eqsf2)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fgtge.eo)
-                              build/default/production/_ext/1472/math_helper.o (___gtsf2)
+                              build/default/debug/_ext/1472/math_helper.o (___gtsf2)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fixunssfsi.eo)
-                              build/default/production/_ext/1472/mcal_pwm.o (___fixunssfsi)
+                              build/default/debug/_ext/1472/mcal_pwm.o (___fixunssfsi)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(floatunsisf.eo)
-                              build/default/production/_ext/1472/mcal_pwm.o (___floatunsisf)
+                              build/default/debug/_ext/1472/mcal_pwm.o (___floatunsisf)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fpack.eo)
                               c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__fpack)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(funpack.eo)
@@ -91,7 +98,7 @@ c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(funpack
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(futil.eo)
                               c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(addsf3.eo) (__fPropagateNaN)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(mulsf3.eo)
-                              build/default/production/_ext/1472/mcal_pwm.o (___mulsf3)
+                              build/default/debug/_ext/1472/mcal_pwm.o (___mulsf3)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(fcompare.eo)
                               c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(feqltle.eo) (__fcompare)
 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
@@ -118,10 +125,15 @@ section                    address   length (PC units)   length (bytes) (dec)
 
 section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
-.nbss                        0x800                   0            0x20  (32)
-.bss                         0x820                   0            0x20  (32)
+reserve_data_0x800           0x800                0x20            0x20  (32)
+reserve_data_0x820           0x820                 0x2             0x2  (2)
+reserve_data_0x822           0x822                 0x2             0x2  (2)
+reserve_data_0x824           0x824                 0x2             0x2  (2)
+reserve_data_0x826           0x826                0x2a            0x2a  (42)
+.nbss                        0x850                   0            0x20  (32)
+.bss                         0x870                   0            0x20  (32)
 
-                 Total "data" memory used (bytes):           0x40  (64) <1%
+                 Total "data" memory used (bytes):           0x90  (144) <1%
 
 
 Dynamic Memory Usage
@@ -129,46 +141,46 @@ Dynamic Memory Usage
 region                     address                      maximum length  (dec)
 ------                     -------                      ---------------------
 heap                             0                                   0  (0)
-stack                        0x840                              0x3fc0  (16320)
+stack                        0x890                              0x3f70  (16240)
 
-                 Maximum dynamic memory (bytes):         0x3fc0  (16320)
+                 Maximum dynamic memory (bytes):         0x3f70  (16240)
 
 
 External Symbols in Data Memory (by address):
 
-                    0x0800                  _u8RxBuff_Index
-                    0x0802                  _eRF_OpMode
-                    0x0804                  _bRF_IRQ
-                    0x0806                  _u8NewRX
-                    0x0808                  _u16Tim2IntCnt
-                    0x080a                  _u16Tim3IntCnt
-                    0x080c                  _u8Tim2IntFlag
-                    0x080e                  _u8Tim3IntFlag
-                    0x0810                  _u8FlagTask_5ms
-                    0x0812                  _u8FlagTask_10ms
-                    0x0814                  _u8FlagTask_500ms
-                    0x0816                  _u8FlagTask_1000ms
-                    0x0818                  _l_o
-                    0x081a                  _l_b
-                    0x0820                  _au8RxBuff
+                    0x0850                  _u8RxBuff_Index
+                    0x0852                  _eRF_OpMode
+                    0x0854                  _bRF_IRQ
+                    0x0856                  _u8NewRX
+                    0x0858                  _u16Tim2IntCnt
+                    0x085a                  _u16Tim3IntCnt
+                    0x085c                  _u8Tim2IntFlag
+                    0x085e                  _u8Tim3IntFlag
+                    0x0860                  _u8FlagTask_5ms
+                    0x0862                  _u8FlagTask_10ms
+                    0x0864                  _u8FlagTask_500ms
+                    0x0866                  _u8FlagTask_1000ms
+                    0x0868                  _l_o
+                    0x086a                  _l_b
+                    0x0870                  _au8RxBuff
 
 External Symbols in Data Memory (by name):
 
-                    0x0820                  _au8RxBuff
-                    0x0804                  _bRF_IRQ
-                    0x0802                  _eRF_OpMode
-                    0x081a                  _l_b
-                    0x0818                  _l_o
-                    0x0808                  _u16Tim2IntCnt
-                    0x080a                  _u16Tim3IntCnt
-                    0x0816                  _u8FlagTask_1000ms
-                    0x0812                  _u8FlagTask_10ms
-                    0x0814                  _u8FlagTask_500ms
-                    0x0810                  _u8FlagTask_5ms
-                    0x0806                  _u8NewRX
-                    0x0800                  _u8RxBuff_Index
-                    0x080c                  _u8Tim2IntFlag
-                    0x080e                  _u8Tim3IntFlag
+                    0x0870                  _au8RxBuff
+                    0x0854                  _bRF_IRQ
+                    0x0852                  _eRF_OpMode
+                    0x086a                  _l_b
+                    0x0868                  _l_o
+                    0x0858                  _u16Tim2IntCnt
+                    0x085a                  _u16Tim3IntCnt
+                    0x0866                  _u8FlagTask_1000ms
+                    0x0862                  _u8FlagTask_10ms
+                    0x0864                  _u8FlagTask_500ms
+                    0x0860                  _u8FlagTask_5ms
+                    0x0856                  _u8NewRX
+                    0x0850                  _u8RxBuff_Index
+                    0x085c                  _u8Tim2IntFlag
+                    0x085e                  _u8Tim3IntFlag
 
 External Symbols in Program Memory (by address):
 
@@ -519,26 +531,53 @@ FUID3            0xf80016           0x000002
 
 Linker script and memory map
 
-LOAD build/default/production/_ext/1472/asw_com.o
-LOAD build/default/production/_ext/1472/hal_nRF.o
-LOAD build/default/production/_ext/1472/main.o
-LOAD build/default/production/_ext/1472/mcal_adc.o
-LOAD build/default/production/_ext/1472/mcal_encoder.o
-LOAD build/default/production/_ext/1472/mcal_gpio.o
-LOAD build/default/production/_ext/1472/mcal_init.o
-LOAD build/default/production/_ext/1472/mcal_interrupts.o
-LOAD build/default/production/_ext/1472/mcal_osc.o
-LOAD build/default/production/_ext/1472/mcal_pwm.o
-LOAD build/default/production/_ext/1472/mcal_spi.o
-LOAD build/default/production/_ext/1472/mcal_timers.o
-LOAD build/default/production/_ext/1472/sys_schedule.o
-LOAD build/default/production/_ext/1472/sys_tasks.o
-LOAD build/default/production/_ext/1472/light_sig.o
-LOAD build/default/production/_ext/1472/hal_dc.o
-LOAD build/default/production/_ext/1472/asw_move.o
-LOAD build/default/production/_ext/1472/hal_servo.o
-LOAD build/default/production/_ext/1472/math_helper.o
+
+reserve_data_0x800
+                    0x0800         0x20
+                    0x0820                  . = 0x20
+ *fill*             0x0800         0x2000
+
+reserve_data_0x820
+                    0x0820          0x2
+                    0x0822                  . = 0x2
+ *fill*             0x0820          0x200
+
+reserve_data_0x822
+                    0x0822          0x2
+                    0x0824                  . = 0x2
+ *fill*             0x0822          0x200
+
+reserve_data_0x824
+                    0x0824          0x2
+                    0x0826                  . = 0x2
+ *fill*             0x0824          0x200
+
+reserve_data_0x826
+                    0x0826         0x2a
+                    0x0850                  . = 0x2a
+ *fill*             0x0826         0x2a00
+LOAD build/default/debug/_ext/1472/asw_com.o
+LOAD build/default/debug/_ext/1472/hal_nRF.o
+LOAD build/default/debug/_ext/1472/main.o
+LOAD build/default/debug/_ext/1472/mcal_adc.o
+LOAD build/default/debug/_ext/1472/mcal_encoder.o
+LOAD build/default/debug/_ext/1472/mcal_gpio.o
+LOAD build/default/debug/_ext/1472/mcal_init.o
+LOAD build/default/debug/_ext/1472/mcal_interrupts.o
+LOAD build/default/debug/_ext/1472/mcal_osc.o
+LOAD build/default/debug/_ext/1472/mcal_pwm.o
+LOAD build/default/debug/_ext/1472/mcal_spi.o
+LOAD build/default/debug/_ext/1472/mcal_timers.o
+LOAD build/default/debug/_ext/1472/sys_schedule.o
+LOAD build/default/debug/_ext/1472/sys_tasks.o
+LOAD build/default/debug/_ext/1472/light_sig.o
+LOAD build/default/debug/_ext/1472/hal_dc.o
+LOAD build/default/debug/_ext/1472/asw_move.o
+LOAD build/default/debug/_ext/1472/hal_servo.o
+LOAD build/default/debug/_ext/1472/math_helper.o
                     0x0001                  __MPLAB_BUILD = 0x1
+                    0x0001                  __MPLAB_DEBUG = 0x1
+                    0x0001                  __DEBUG = 0x1
 LOAD p33FJ128MC804
 LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libfx-elf.a
                     0xf80000                  __FBS = 0xf80000
@@ -581,11 +620,11 @@ LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libfx-elf.a
  *(.user_init)
  *(.handle)
  *(.isr*)
- .isr.text        0x0002c8         0x1e build/default/production/_ext/1472/mcal_interrupts.o
+ .isr.text        0x0002c8         0x1e build/default/debug/_ext/1472/mcal_interrupts.o
                   0x0002c8                  __INT0Interrupt
                   0x0002ce                  __INT1Interrupt
                   0x0002d6                  __INT2Interrupt
- .isr.text        0x0002e6         0x3c build/default/production/_ext/1472/mcal_timers.o
+ .isr.text        0x0002e6         0x3c build/default/debug/_ext/1472/mcal_timers.o
                   0x0002e6                  __T2Interrupt
                   0x0002fc                  __T3Interrupt
                   0x000312                  __T4Interrupt
@@ -687,106 +726,106 @@ __FUID3
 
 .debug_info       0x000000       0x8b5b
  *(.debug_info)
- .debug_info      0x000000        0x2d3 build/default/production/_ext/1472/asw_com.o
- .debug_info      0x0002d3        0x91e build/default/production/_ext/1472/hal_nRF.o
- .debug_info      0x000bf1         0xb4 build/default/production/_ext/1472/main.o
- .debug_info      0x000ca5        0x7a6 build/default/production/_ext/1472/mcal_adc.o
- .debug_info      0x00144b        0x9d6 build/default/production/_ext/1472/mcal_encoder.o
- .debug_info      0x001e21        0x46e build/default/production/_ext/1472/mcal_gpio.o
- .debug_info      0x00228f        0x16c build/default/production/_ext/1472/mcal_init.o
- .debug_info      0x0023fb       0x126f build/default/production/_ext/1472/mcal_interrupts.o
- .debug_info      0x00366a        0x279 build/default/production/_ext/1472/mcal_osc.o
- .debug_info      0x0038e3        0xccf build/default/production/_ext/1472/mcal_pwm.o
- .debug_info      0x0045b2       0x11ab build/default/production/_ext/1472/mcal_spi.o
- .debug_info      0x00575d       0x1a79 build/default/production/_ext/1472/mcal_timers.o
- .debug_info      0x0071d6        0xe02 build/default/production/_ext/1472/sys_schedule.o
- .debug_info      0x007fd8        0x204 build/default/production/_ext/1472/sys_tasks.o
- .debug_info      0x0081dc        0x1da build/default/production/_ext/1472/light_sig.o
- .debug_info      0x0083b6        0x218 build/default/production/_ext/1472/hal_dc.o
- .debug_info      0x0085ce        0x223 build/default/production/_ext/1472/asw_move.o
- .debug_info      0x0087f1        0x1c5 build/default/production/_ext/1472/hal_servo.o
- .debug_info      0x0089b6        0x1a5 build/default/production/_ext/1472/math_helper.o
+ .debug_info      0x000000        0x2d3 build/default/debug/_ext/1472/asw_com.o
+ .debug_info      0x0002d3        0x91e build/default/debug/_ext/1472/hal_nRF.o
+ .debug_info      0x000bf1         0xb4 build/default/debug/_ext/1472/main.o
+ .debug_info      0x000ca5        0x7a6 build/default/debug/_ext/1472/mcal_adc.o
+ .debug_info      0x00144b        0x9d6 build/default/debug/_ext/1472/mcal_encoder.o
+ .debug_info      0x001e21        0x46e build/default/debug/_ext/1472/mcal_gpio.o
+ .debug_info      0x00228f        0x16c build/default/debug/_ext/1472/mcal_init.o
+ .debug_info      0x0023fb       0x126f build/default/debug/_ext/1472/mcal_interrupts.o
+ .debug_info      0x00366a        0x279 build/default/debug/_ext/1472/mcal_osc.o
+ .debug_info      0x0038e3        0xccf build/default/debug/_ext/1472/mcal_pwm.o
+ .debug_info      0x0045b2       0x11ab build/default/debug/_ext/1472/mcal_spi.o
+ .debug_info      0x00575d       0x1a79 build/default/debug/_ext/1472/mcal_timers.o
+ .debug_info      0x0071d6        0xe02 build/default/debug/_ext/1472/sys_schedule.o
+ .debug_info      0x007fd8        0x204 build/default/debug/_ext/1472/sys_tasks.o
+ .debug_info      0x0081dc        0x1da build/default/debug/_ext/1472/light_sig.o
+ .debug_info      0x0083b6        0x218 build/default/debug/_ext/1472/hal_dc.o
+ .debug_info      0x0085ce        0x223 build/default/debug/_ext/1472/asw_move.o
+ .debug_info      0x0087f1        0x1c5 build/default/debug/_ext/1472/hal_servo.o
+ .debug_info      0x0089b6        0x1a5 build/default/debug/_ext/1472/math_helper.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0xf10
  *(.debug_abbrev)
- .debug_abbrev    0x000000         0xc7 build/default/production/_ext/1472/asw_com.o
- .debug_abbrev    0x0000c7        0x1a0 build/default/production/_ext/1472/hal_nRF.o
- .debug_abbrev    0x000267         0x34 build/default/production/_ext/1472/main.o
- .debug_abbrev    0x00029b         0xed build/default/production/_ext/1472/mcal_adc.o
- .debug_abbrev    0x000388         0xf1 build/default/production/_ext/1472/mcal_encoder.o
- .debug_abbrev    0x000479        0x109 build/default/production/_ext/1472/mcal_gpio.o
- .debug_abbrev    0x000582         0x34 build/default/production/_ext/1472/mcal_init.o
- .debug_abbrev    0x0005b6        0x103 build/default/production/_ext/1472/mcal_interrupts.o
- .debug_abbrev    0x0006b9         0xb2 build/default/production/_ext/1472/mcal_osc.o
- .debug_abbrev    0x00076b        0x118 build/default/production/_ext/1472/mcal_pwm.o
- .debug_abbrev    0x000883        0x174 build/default/production/_ext/1472/mcal_spi.o
- .debug_abbrev    0x0009f7        0x1d2 build/default/production/_ext/1472/mcal_timers.o
- .debug_abbrev    0x000bc9         0xc4 build/default/production/_ext/1472/sys_schedule.o
- .debug_abbrev    0x000c8d         0x34 build/default/production/_ext/1472/sys_tasks.o
- .debug_abbrev    0x000cc1         0x61 build/default/production/_ext/1472/light_sig.o
- .debug_abbrev    0x000d22         0x94 build/default/production/_ext/1472/hal_dc.o
- .debug_abbrev    0x000db6         0x94 build/default/production/_ext/1472/asw_move.o
- .debug_abbrev    0x000e4a         0x74 build/default/production/_ext/1472/hal_servo.o
- .debug_abbrev    0x000ebe         0x52 build/default/production/_ext/1472/math_helper.o
+ .debug_abbrev    0x000000         0xc7 build/default/debug/_ext/1472/asw_com.o
+ .debug_abbrev    0x0000c7        0x1a0 build/default/debug/_ext/1472/hal_nRF.o
+ .debug_abbrev    0x000267         0x34 build/default/debug/_ext/1472/main.o
+ .debug_abbrev    0x00029b         0xed build/default/debug/_ext/1472/mcal_adc.o
+ .debug_abbrev    0x000388         0xf1 build/default/debug/_ext/1472/mcal_encoder.o
+ .debug_abbrev    0x000479        0x109 build/default/debug/_ext/1472/mcal_gpio.o
+ .debug_abbrev    0x000582         0x34 build/default/debug/_ext/1472/mcal_init.o
+ .debug_abbrev    0x0005b6        0x103 build/default/debug/_ext/1472/mcal_interrupts.o
+ .debug_abbrev    0x0006b9         0xb2 build/default/debug/_ext/1472/mcal_osc.o
+ .debug_abbrev    0x00076b        0x118 build/default/debug/_ext/1472/mcal_pwm.o
+ .debug_abbrev    0x000883        0x174 build/default/debug/_ext/1472/mcal_spi.o
+ .debug_abbrev    0x0009f7        0x1d2 build/default/debug/_ext/1472/mcal_timers.o
+ .debug_abbrev    0x000bc9         0xc4 build/default/debug/_ext/1472/sys_schedule.o
+ .debug_abbrev    0x000c8d         0x34 build/default/debug/_ext/1472/sys_tasks.o
+ .debug_abbrev    0x000cc1         0x61 build/default/debug/_ext/1472/light_sig.o
+ .debug_abbrev    0x000d22         0x94 build/default/debug/_ext/1472/hal_dc.o
+ .debug_abbrev    0x000db6         0x94 build/default/debug/_ext/1472/asw_move.o
+ .debug_abbrev    0x000e4a         0x74 build/default/debug/_ext/1472/hal_servo.o
+ .debug_abbrev    0x000ebe         0x52 build/default/debug/_ext/1472/math_helper.o
 
 .debug_line       0x000000       0x10c1
  *(.debug_line)
- .debug_line      0x000000         0x60 build/default/production/_ext/1472/asw_com.o
- .debug_line      0x000060        0x159 build/default/production/_ext/1472/hal_nRF.o
- .debug_line      0x0001b9         0x39 build/default/production/_ext/1472/main.o
- .debug_line      0x0001f2        0x11b build/default/production/_ext/1472/mcal_adc.o
- .debug_line      0x00030d        0x11b build/default/production/_ext/1472/mcal_encoder.o
- .debug_line      0x000428        0x18c build/default/production/_ext/1472/mcal_gpio.o
- .debug_line      0x0005b4         0x44 build/default/production/_ext/1472/mcal_init.o
- .debug_line      0x0005f8        0x145 build/default/production/_ext/1472/mcal_interrupts.o
- .debug_line      0x00073d         0xf1 build/default/production/_ext/1472/mcal_osc.o
- .debug_line      0x00082e        0x171 build/default/production/_ext/1472/mcal_pwm.o
- .debug_line      0x00099f        0x185 build/default/production/_ext/1472/mcal_spi.o
- .debug_line      0x000b24        0x1fa build/default/production/_ext/1472/mcal_timers.o
- .debug_line      0x000d1e        0x150 build/default/production/_ext/1472/sys_schedule.o
- .debug_line      0x000e6e         0x4d build/default/production/_ext/1472/sys_tasks.o
- .debug_line      0x000ebb         0x62 build/default/production/_ext/1472/light_sig.o
- .debug_line      0x000f1d         0x64 build/default/production/_ext/1472/hal_dc.o
- .debug_line      0x000f81         0x90 build/default/production/_ext/1472/asw_move.o
- .debug_line      0x001011         0x57 build/default/production/_ext/1472/hal_servo.o
- .debug_line      0x001068         0x59 build/default/production/_ext/1472/math_helper.o
+ .debug_line      0x000000         0x60 build/default/debug/_ext/1472/asw_com.o
+ .debug_line      0x000060        0x159 build/default/debug/_ext/1472/hal_nRF.o
+ .debug_line      0x0001b9         0x39 build/default/debug/_ext/1472/main.o
+ .debug_line      0x0001f2        0x11b build/default/debug/_ext/1472/mcal_adc.o
+ .debug_line      0x00030d        0x11b build/default/debug/_ext/1472/mcal_encoder.o
+ .debug_line      0x000428        0x18c build/default/debug/_ext/1472/mcal_gpio.o
+ .debug_line      0x0005b4         0x44 build/default/debug/_ext/1472/mcal_init.o
+ .debug_line      0x0005f8        0x145 build/default/debug/_ext/1472/mcal_interrupts.o
+ .debug_line      0x00073d         0xf1 build/default/debug/_ext/1472/mcal_osc.o
+ .debug_line      0x00082e        0x171 build/default/debug/_ext/1472/mcal_pwm.o
+ .debug_line      0x00099f        0x185 build/default/debug/_ext/1472/mcal_spi.o
+ .debug_line      0x000b24        0x1fa build/default/debug/_ext/1472/mcal_timers.o
+ .debug_line      0x000d1e        0x150 build/default/debug/_ext/1472/sys_schedule.o
+ .debug_line      0x000e6e         0x4d build/default/debug/_ext/1472/sys_tasks.o
+ .debug_line      0x000ebb         0x62 build/default/debug/_ext/1472/light_sig.o
+ .debug_line      0x000f1d         0x64 build/default/debug/_ext/1472/hal_dc.o
+ .debug_line      0x000f81         0x90 build/default/debug/_ext/1472/asw_move.o
+ .debug_line      0x001011         0x57 build/default/debug/_ext/1472/hal_servo.o
+ .debug_line      0x001068         0x59 build/default/debug/_ext/1472/math_helper.o
 
 .debug_frame      0x000000       0x1054
  *(.debug_frame)
- .debug_frame     0x000000         0xa0 build/default/production/_ext/1472/asw_com.o
- .debug_frame     0x0000a0        0x39a build/default/production/_ext/1472/hal_nRF.o
- .debug_frame     0x00043a         0x30 build/default/production/_ext/1472/main.o
- .debug_frame     0x00046a         0x4c build/default/production/_ext/1472/mcal_adc.o
- .debug_frame     0x0004b6         0x68 build/default/production/_ext/1472/mcal_encoder.o
- .debug_frame     0x00051e         0xa0 build/default/production/_ext/1472/mcal_gpio.o
- .debug_frame     0x0005be         0x30 build/default/production/_ext/1472/mcal_init.o
- .debug_frame     0x0005ee         0xe0 build/default/production/_ext/1472/mcal_interrupts.o
- .debug_frame     0x0006ce         0x30 build/default/production/_ext/1472/mcal_osc.o
- .debug_frame     0x0006fe        0x100 build/default/production/_ext/1472/mcal_pwm.o
- .debug_frame     0x0007fe        0x12c build/default/production/_ext/1472/mcal_spi.o
- .debug_frame     0x00092a        0x3f8 build/default/production/_ext/1472/mcal_timers.o
- .debug_frame     0x000d22         0xa0 build/default/production/_ext/1472/sys_schedule.o
- .debug_frame     0x000dc2         0xd8 build/default/production/_ext/1472/sys_tasks.o
- .debug_frame     0x000e9a         0x4c build/default/production/_ext/1472/light_sig.o
- .debug_frame     0x000ee6         0x68 build/default/production/_ext/1472/hal_dc.o
- .debug_frame     0x000f4e         0x84 build/default/production/_ext/1472/asw_move.o
- .debug_frame     0x000fd2         0x4c build/default/production/_ext/1472/hal_servo.o
- .debug_frame     0x00101e         0x36 build/default/production/_ext/1472/math_helper.o
+ .debug_frame     0x000000         0xa0 build/default/debug/_ext/1472/asw_com.o
+ .debug_frame     0x0000a0        0x39a build/default/debug/_ext/1472/hal_nRF.o
+ .debug_frame     0x00043a         0x30 build/default/debug/_ext/1472/main.o
+ .debug_frame     0x00046a         0x4c build/default/debug/_ext/1472/mcal_adc.o
+ .debug_frame     0x0004b6         0x68 build/default/debug/_ext/1472/mcal_encoder.o
+ .debug_frame     0x00051e         0xa0 build/default/debug/_ext/1472/mcal_gpio.o
+ .debug_frame     0x0005be         0x30 build/default/debug/_ext/1472/mcal_init.o
+ .debug_frame     0x0005ee         0xe0 build/default/debug/_ext/1472/mcal_interrupts.o
+ .debug_frame     0x0006ce         0x30 build/default/debug/_ext/1472/mcal_osc.o
+ .debug_frame     0x0006fe        0x100 build/default/debug/_ext/1472/mcal_pwm.o
+ .debug_frame     0x0007fe        0x12c build/default/debug/_ext/1472/mcal_spi.o
+ .debug_frame     0x00092a        0x3f8 build/default/debug/_ext/1472/mcal_timers.o
+ .debug_frame     0x000d22         0xa0 build/default/debug/_ext/1472/sys_schedule.o
+ .debug_frame     0x000dc2         0xd8 build/default/debug/_ext/1472/sys_tasks.o
+ .debug_frame     0x000e9a         0x4c build/default/debug/_ext/1472/light_sig.o
+ .debug_frame     0x000ee6         0x68 build/default/debug/_ext/1472/hal_dc.o
+ .debug_frame     0x000f4e         0x84 build/default/debug/_ext/1472/asw_move.o
+ .debug_frame     0x000fd2         0x4c build/default/debug/_ext/1472/hal_servo.o
+ .debug_frame     0x00101e         0x36 build/default/debug/_ext/1472/math_helper.o
 
 .debug_str        0x000000        0x42b
  *(.debug_str)
- .debug_str       0x000000         0x23 build/default/production/_ext/1472/asw_com.o
- .debug_str       0x000023         0x4d build/default/production/_ext/1472/hal_nRF.o
- .debug_str       0x000070         0x38 build/default/production/_ext/1472/mcal_adc.o
- .debug_str       0x0000a8         0x40 build/default/production/_ext/1472/mcal_encoder.o
- .debug_str       0x0000e8         0x10 build/default/production/_ext/1472/mcal_gpio.o
- .debug_str       0x0000f8         0x78 build/default/production/_ext/1472/mcal_interrupts.o
- .debug_str       0x000170          0xb build/default/production/_ext/1472/mcal_osc.o
- .debug_str       0x00017b         0x65 build/default/production/_ext/1472/mcal_pwm.o
- .debug_str       0x0001e0         0x86 build/default/production/_ext/1472/mcal_spi.o
- .debug_str       0x000266         0xeb build/default/production/_ext/1472/mcal_timers.o
- .debug_str       0x000351         0xda build/default/production/_ext/1472/sys_schedule.o
+ .debug_str       0x000000         0x23 build/default/debug/_ext/1472/asw_com.o
+ .debug_str       0x000023         0x4d build/default/debug/_ext/1472/hal_nRF.o
+ .debug_str       0x000070         0x38 build/default/debug/_ext/1472/mcal_adc.o
+ .debug_str       0x0000a8         0x40 build/default/debug/_ext/1472/mcal_encoder.o
+ .debug_str       0x0000e8         0x10 build/default/debug/_ext/1472/mcal_gpio.o
+ .debug_str       0x0000f8         0x78 build/default/debug/_ext/1472/mcal_interrupts.o
+ .debug_str       0x000170          0xb build/default/debug/_ext/1472/mcal_osc.o
+ .debug_str       0x00017b         0x65 build/default/debug/_ext/1472/mcal_pwm.o
+ .debug_str       0x0001e0         0x86 build/default/debug/_ext/1472/mcal_spi.o
+ .debug_str       0x000266         0xeb build/default/debug/_ext/1472/mcal_timers.o
+ .debug_str       0x000351         0xda build/default/debug/_ext/1472/sys_schedule.o
 
 .debug_loc
  *(.debug_loc)
@@ -798,43 +837,43 @@ __FUID3
                   0x000000        0xc65
  *(.debug_pubnames)
  .debug_pubnames
-                  0x000000         0x7a build/default/production/_ext/1472/asw_com.o
+                  0x000000         0x7a build/default/debug/_ext/1472/asw_com.o
  .debug_pubnames
-                  0x00007a        0x2f6 build/default/production/_ext/1472/hal_nRF.o
+                  0x00007a        0x2f6 build/default/debug/_ext/1472/hal_nRF.o
  .debug_pubnames
-                  0x000370         0x1b build/default/production/_ext/1472/main.o
+                  0x000370         0x1b build/default/debug/_ext/1472/main.o
  .debug_pubnames
-                  0x00038b         0x30 build/default/production/_ext/1472/mcal_adc.o
+                  0x00038b         0x30 build/default/debug/_ext/1472/mcal_adc.o
  .debug_pubnames
-                  0x0003bb         0x48 build/default/production/_ext/1472/mcal_encoder.o
+                  0x0003bb         0x48 build/default/debug/_ext/1472/mcal_encoder.o
  .debug_pubnames
-                  0x000403         0x80 build/default/production/_ext/1472/mcal_gpio.o
+                  0x000403         0x80 build/default/debug/_ext/1472/mcal_gpio.o
  .debug_pubnames
-                  0x000483         0x21 build/default/production/_ext/1472/mcal_init.o
+                  0x000483         0x21 build/default/debug/_ext/1472/mcal_init.o
  .debug_pubnames
-                  0x0004a4         0x86 build/default/production/_ext/1472/mcal_interrupts.o
+                  0x0004a4         0x86 build/default/debug/_ext/1472/mcal_interrupts.o
  .debug_pubnames
-                  0x00052a         0x20 build/default/production/_ext/1472/mcal_osc.o
+                  0x00052a         0x20 build/default/debug/_ext/1472/mcal_osc.o
  .debug_pubnames
-                  0x00054a         0xac build/default/production/_ext/1472/mcal_pwm.o
+                  0x00054a         0xac build/default/debug/_ext/1472/mcal_pwm.o
  .debug_pubnames
-                  0x0005f6         0xf6 build/default/production/_ext/1472/mcal_spi.o
+                  0x0005f6         0xf6 build/default/debug/_ext/1472/mcal_spi.o
  .debug_pubnames
-                  0x0006ec        0x2ea build/default/production/_ext/1472/mcal_timers.o
+                  0x0006ec        0x2ea build/default/debug/_ext/1472/mcal_timers.o
  .debug_pubnames
-                  0x0009d6         0xc8 build/default/production/_ext/1472/sys_schedule.o
+                  0x0009d6         0xc8 build/default/debug/_ext/1472/sys_schedule.o
  .debug_pubnames
-                  0x000a9e         0x77 build/default/production/_ext/1472/sys_tasks.o
+                  0x000a9e         0x77 build/default/debug/_ext/1472/sys_tasks.o
  .debug_pubnames
-                  0x000b15         0x4b build/default/production/_ext/1472/light_sig.o
+                  0x000b15         0x4b build/default/debug/_ext/1472/light_sig.o
  .debug_pubnames
-                  0x000b60         0x51 build/default/production/_ext/1472/hal_dc.o
+                  0x000b60         0x51 build/default/debug/_ext/1472/hal_dc.o
  .debug_pubnames
-                  0x000bb1         0x59 build/default/production/_ext/1472/asw_move.o
+                  0x000bb1         0x59 build/default/debug/_ext/1472/asw_move.o
  .debug_pubnames
-                  0x000c0a         0x3f build/default/production/_ext/1472/hal_servo.o
+                  0x000c0a         0x3f build/default/debug/_ext/1472/hal_servo.o
  .debug_pubnames
-                  0x000c49         0x1c build/default/production/_ext/1472/math_helper.o
+                  0x000c49         0x1c build/default/debug/_ext/1472/math_helper.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -842,43 +881,43 @@ __FUID3
 .debug_aranges    0x000000        0x1c8
  *(.debug_aranges)
  .debug_aranges
-                  0x000000         0x18 build/default/production/_ext/1472/asw_com.o
+                  0x000000         0x18 build/default/debug/_ext/1472/asw_com.o
  .debug_aranges
-                  0x000018         0x18 build/default/production/_ext/1472/hal_nRF.o
+                  0x000018         0x18 build/default/debug/_ext/1472/hal_nRF.o
  .debug_aranges
-                  0x000030         0x18 build/default/production/_ext/1472/main.o
+                  0x000030         0x18 build/default/debug/_ext/1472/main.o
  .debug_aranges
-                  0x000048         0x18 build/default/production/_ext/1472/mcal_adc.o
+                  0x000048         0x18 build/default/debug/_ext/1472/mcal_adc.o
  .debug_aranges
-                  0x000060         0x18 build/default/production/_ext/1472/mcal_encoder.o
+                  0x000060         0x18 build/default/debug/_ext/1472/mcal_encoder.o
  .debug_aranges
-                  0x000078         0x18 build/default/production/_ext/1472/mcal_gpio.o
+                  0x000078         0x18 build/default/debug/_ext/1472/mcal_gpio.o
  .debug_aranges
-                  0x000090         0x18 build/default/production/_ext/1472/mcal_init.o
+                  0x000090         0x18 build/default/debug/_ext/1472/mcal_init.o
  .debug_aranges
-                  0x0000a8         0x18 build/default/production/_ext/1472/mcal_interrupts.o
+                  0x0000a8         0x18 build/default/debug/_ext/1472/mcal_interrupts.o
  .debug_aranges
-                  0x0000c0         0x18 build/default/production/_ext/1472/mcal_osc.o
+                  0x0000c0         0x18 build/default/debug/_ext/1472/mcal_osc.o
  .debug_aranges
-                  0x0000d8         0x18 build/default/production/_ext/1472/mcal_pwm.o
+                  0x0000d8         0x18 build/default/debug/_ext/1472/mcal_pwm.o
  .debug_aranges
-                  0x0000f0         0x18 build/default/production/_ext/1472/mcal_spi.o
+                  0x0000f0         0x18 build/default/debug/_ext/1472/mcal_spi.o
  .debug_aranges
-                  0x000108         0x18 build/default/production/_ext/1472/mcal_timers.o
+                  0x000108         0x18 build/default/debug/_ext/1472/mcal_timers.o
  .debug_aranges
-                  0x000120         0x18 build/default/production/_ext/1472/sys_schedule.o
+                  0x000120         0x18 build/default/debug/_ext/1472/sys_schedule.o
  .debug_aranges
-                  0x000138         0x18 build/default/production/_ext/1472/sys_tasks.o
+                  0x000138         0x18 build/default/debug/_ext/1472/sys_tasks.o
  .debug_aranges
-                  0x000150         0x18 build/default/production/_ext/1472/light_sig.o
+                  0x000150         0x18 build/default/debug/_ext/1472/light_sig.o
  .debug_aranges
-                  0x000168         0x18 build/default/production/_ext/1472/hal_dc.o
+                  0x000168         0x18 build/default/debug/_ext/1472/hal_dc.o
  .debug_aranges
-                  0x000180         0x18 build/default/production/_ext/1472/asw_move.o
+                  0x000180         0x18 build/default/debug/_ext/1472/asw_move.o
  .debug_aranges
-                  0x000198         0x18 build/default/production/_ext/1472/hal_servo.o
+                  0x000198         0x18 build/default/debug/_ext/1472/hal_servo.o
  .debug_aranges
-                  0x0001b0         0x18 build/default/production/_ext/1472/math_helper.o
+                  0x0001b0         0x18 build/default/debug/_ext/1472/math_helper.o
                     0x0000                  WREG0 = 0x0
                     0x0000                  _WREG0 = 0x0
                     0x0002                  WREG1 = 0x2
@@ -1991,89 +2030,89 @@ LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30
 LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a
 LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-c-elf.a
 END GROUP
-OUTPUT(dist/default/production/Calul.X.production.elf elf32-pic30)
+OUTPUT(dist/default/debug/Calul.X.debug.elf elf32-pic30)
 LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
                   0x0001c8        0xa8a
  .debug_pubtypes
-                  0x0001c8         0x2e build/default/production/_ext/1472/asw_com.o
+                  0x0001c8         0x2e build/default/debug/_ext/1472/asw_com.o
  .debug_pubtypes
-                  0x0001f6         0x3e build/default/production/_ext/1472/hal_nRF.o
+                  0x0001f6         0x3e build/default/debug/_ext/1472/hal_nRF.o
  .debug_pubtypes
-                  0x000234         0xbc build/default/production/_ext/1472/mcal_adc.o
+                  0x000234         0xbc build/default/debug/_ext/1472/mcal_adc.o
  .debug_pubtypes
-                  0x0002f0         0xce build/default/production/_ext/1472/mcal_encoder.o
+                  0x0002f0         0xce build/default/debug/_ext/1472/mcal_encoder.o
  .debug_pubtypes
-                  0x0003be         0x45 build/default/production/_ext/1472/mcal_gpio.o
+                  0x0003be         0x45 build/default/debug/_ext/1472/mcal_gpio.o
  .debug_pubtypes
-                  0x000403         0x12 build/default/production/_ext/1472/mcal_init.o
+                  0x000403         0x12 build/default/debug/_ext/1472/mcal_init.o
  .debug_pubtypes
-                  0x000415        0x18e build/default/production/_ext/1472/mcal_interrupts.o
+                  0x000415        0x18e build/default/debug/_ext/1472/mcal_interrupts.o
  .debug_pubtypes
-                  0x0005a3         0x40 build/default/production/_ext/1472/mcal_osc.o
+                  0x0005a3         0x40 build/default/debug/_ext/1472/mcal_osc.o
  .debug_pubtypes
-                  0x0005e3        0x129 build/default/production/_ext/1472/mcal_pwm.o
+                  0x0005e3        0x129 build/default/debug/_ext/1472/mcal_pwm.o
  .debug_pubtypes
-                  0x00070c        0x17f build/default/production/_ext/1472/mcal_spi.o
+                  0x00070c        0x17f build/default/debug/_ext/1472/mcal_spi.o
  .debug_pubtypes
-                  0x00088b        0x1b3 build/default/production/_ext/1472/mcal_timers.o
+                  0x00088b        0x1b3 build/default/debug/_ext/1472/mcal_timers.o
  .debug_pubtypes
-                  0x000a3e        0x14d build/default/production/_ext/1472/sys_schedule.o
+                  0x000a3e        0x14d build/default/debug/_ext/1472/sys_schedule.o
  .debug_pubtypes
-                  0x000b8b         0x12 build/default/production/_ext/1472/sys_tasks.o
+                  0x000b8b         0x12 build/default/debug/_ext/1472/sys_tasks.o
  .debug_pubtypes
-                  0x000b9d         0x1c build/default/production/_ext/1472/light_sig.o
+                  0x000b9d         0x1c build/default/debug/_ext/1472/light_sig.o
  .debug_pubtypes
-                  0x000bb9         0x37 build/default/production/_ext/1472/hal_dc.o
+                  0x000bb9         0x37 build/default/debug/_ext/1472/hal_dc.o
  .debug_pubtypes
-                  0x000bf0         0x2a build/default/production/_ext/1472/asw_move.o
+                  0x000bf0         0x2a build/default/debug/_ext/1472/asw_move.o
  .debug_pubtypes
-                  0x000c1a         0x1c build/default/production/_ext/1472/hal_servo.o
+                  0x000c1a         0x1c build/default/debug/_ext/1472/hal_servo.o
  .debug_pubtypes
-                  0x000c36         0x1c build/default/production/_ext/1472/math_helper.o
+                  0x000c36         0x1c build/default/debug/_ext/1472/math_helper.o
 
 __c30_signature
                   0x000c52         0xd2
  __c30_signature
-                  0x000c52          0x6 build/default/production/_ext/1472/asw_com.o
+                  0x000c52          0x6 build/default/debug/_ext/1472/asw_com.o
  __c30_signature
-                  0x000c58          0x6 build/default/production/_ext/1472/hal_nRF.o
+                  0x000c58          0x6 build/default/debug/_ext/1472/hal_nRF.o
  __c30_signature
-                  0x000c5e          0x6 build/default/production/_ext/1472/main.o
+                  0x000c5e          0x6 build/default/debug/_ext/1472/main.o
  __c30_signature
-                  0x000c64          0x6 build/default/production/_ext/1472/mcal_adc.o
+                  0x000c64          0x6 build/default/debug/_ext/1472/mcal_adc.o
  __c30_signature
-                  0x000c6a          0x6 build/default/production/_ext/1472/mcal_encoder.o
+                  0x000c6a          0x6 build/default/debug/_ext/1472/mcal_encoder.o
  __c30_signature
-                  0x000c70          0x6 build/default/production/_ext/1472/mcal_gpio.o
+                  0x000c70          0x6 build/default/debug/_ext/1472/mcal_gpio.o
  __c30_signature
-                  0x000c76          0x6 build/default/production/_ext/1472/mcal_init.o
+                  0x000c76          0x6 build/default/debug/_ext/1472/mcal_init.o
  __c30_signature
-                  0x000c7c          0x6 build/default/production/_ext/1472/mcal_interrupts.o
+                  0x000c7c          0x6 build/default/debug/_ext/1472/mcal_interrupts.o
  __c30_signature
-                  0x000c82          0x6 build/default/production/_ext/1472/mcal_osc.o
+                  0x000c82          0x6 build/default/debug/_ext/1472/mcal_osc.o
  __c30_signature
-                  0x000c88          0x6 build/default/production/_ext/1472/mcal_pwm.o
+                  0x000c88          0x6 build/default/debug/_ext/1472/mcal_pwm.o
  __c30_signature
-                  0x000c8e          0x6 build/default/production/_ext/1472/mcal_spi.o
+                  0x000c8e          0x6 build/default/debug/_ext/1472/mcal_spi.o
  __c30_signature
-                  0x000c94          0x6 build/default/production/_ext/1472/mcal_timers.o
+                  0x000c94          0x6 build/default/debug/_ext/1472/mcal_timers.o
  __c30_signature
-                  0x000c9a          0x6 build/default/production/_ext/1472/sys_schedule.o
+                  0x000c9a          0x6 build/default/debug/_ext/1472/sys_schedule.o
  __c30_signature
-                  0x000ca0          0x6 build/default/production/_ext/1472/sys_tasks.o
+                  0x000ca0          0x6 build/default/debug/_ext/1472/sys_tasks.o
  __c30_signature
-                  0x000ca6          0x6 build/default/production/_ext/1472/light_sig.o
+                  0x000ca6          0x6 build/default/debug/_ext/1472/light_sig.o
  __c30_signature
-                  0x000cac          0x6 build/default/production/_ext/1472/hal_dc.o
+                  0x000cac          0x6 build/default/debug/_ext/1472/hal_dc.o
  __c30_signature
-                  0x000cb2          0x6 build/default/production/_ext/1472/asw_move.o
+                  0x000cb2          0x6 build/default/debug/_ext/1472/asw_move.o
  __c30_signature
-                  0x000cb8          0x6 build/default/production/_ext/1472/hal_servo.o
+                  0x000cb8          0x6 build/default/debug/_ext/1472/hal_servo.o
  __c30_signature
-                  0x000cbe          0x6 build/default/production/_ext/1472/math_helper.o
+                  0x000cbe          0x6 build/default/debug/_ext/1472/math_helper.o
  __c30_signature
                   0x000cc4          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
  __c30_signature
@@ -2107,78 +2146,78 @@ __c30_signature
  __c30_signature
                   0x000d1e          0x6 c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libm-elf.a(floatundisf.eo)
 
-.nbss               0x0800         0x20
- .nbss              0x0800          0x8 build/default/production/_ext/1472/hal_nRF.o
-                    0x0800                  _u8RxBuff_Index
-                    0x0802                  _eRF_OpMode
-                    0x0804                  _bRF_IRQ
-                    0x0806                  _u8NewRX
- .nbss              0x0808          0x8 build/default/production/_ext/1472/mcal_timers.o
-                    0x0808                  _u16Tim2IntCnt
-                    0x080a                  _u16Tim3IntCnt
-                    0x080c                  _u8Tim2IntFlag
-                    0x080e                  _u8Tim3IntFlag
- .nbss              0x0810          0x8 build/default/production/_ext/1472/sys_schedule.o
-                    0x0810                  _u8FlagTask_5ms
-                    0x0812                  _u8FlagTask_10ms
-                    0x0814                  _u8FlagTask_500ms
-                    0x0816                  _u8FlagTask_1000ms
- .nbss              0x0818          0x4 build/default/production/_ext/1472/light_sig.o
-                    0x0818                  _l_o
-                    0x081a                  _l_b
- .nbss              0x081c          0x4 build/default/production/_ext/1472/asw_move.o
+.nbss               0x0850         0x20
+ .nbss              0x0850          0x8 build/default/debug/_ext/1472/hal_nRF.o
+                    0x0850                  _u8RxBuff_Index
+                    0x0852                  _eRF_OpMode
+                    0x0854                  _bRF_IRQ
+                    0x0856                  _u8NewRX
+ .nbss              0x0858          0x8 build/default/debug/_ext/1472/mcal_timers.o
+                    0x0858                  _u16Tim2IntCnt
+                    0x085a                  _u16Tim3IntCnt
+                    0x085c                  _u8Tim2IntFlag
+                    0x085e                  _u8Tim3IntFlag
+ .nbss              0x0860          0x8 build/default/debug/_ext/1472/sys_schedule.o
+                    0x0860                  _u8FlagTask_5ms
+                    0x0862                  _u8FlagTask_10ms
+                    0x0864                  _u8FlagTask_500ms
+                    0x0866                  _u8FlagTask_1000ms
+ .nbss              0x0868          0x4 build/default/debug/_ext/1472/light_sig.o
+                    0x0868                  _l_o
+                    0x086a                  _l_b
+ .nbss              0x086c          0x4 build/default/debug/_ext/1472/asw_move.o
 
-.bss                0x0820         0x20
- .bss               0x0820         0x20 build/default/production/_ext/1472/hal_nRF.o
-                    0x0820                  _au8RxBuff
+.bss                0x0870         0x20
+ .bss               0x0870         0x20 build/default/debug/_ext/1472/hal_nRF.o
+                    0x0870                  _au8RxBuff
 
 .config_JTAGEN    0xf8000e          0x2
  .config_JTAGEN
-                  0xf8000e          0x2 build/default/production/_ext/1472/main.o
+                  0xf8000e          0x2 build/default/debug/_ext/1472/main.o
 
 .ivt._INT0Interrupt
                   0x000014          0x2
  .ivt._INT0Interrupt
-                  0x000014          0x2 build/default/production/_ext/1472/mcal_interrupts.o
+                  0x000014          0x2 build/default/debug/_ext/1472/mcal_interrupts.o
 
 .ivt._INT1Interrupt
                   0x00003c          0x2
  .ivt._INT1Interrupt
-                  0x00003c          0x2 build/default/production/_ext/1472/mcal_interrupts.o
+                  0x00003c          0x2 build/default/debug/_ext/1472/mcal_interrupts.o
 
 .ivt._INT2Interrupt
                   0x00004e          0x2
  .ivt._INT2Interrupt
-                  0x00004e          0x2 build/default/production/_ext/1472/mcal_interrupts.o
+                  0x00004e          0x2 build/default/debug/_ext/1472/mcal_interrupts.o
 
 .config_IESO      0xf80006          0x2
- .config_IESO     0xf80006          0x2 build/default/production/_ext/1472/mcal_osc.o
+ .config_IESO     0xf80006          0x2 build/default/debug/_ext/1472/mcal_osc.o
 
 .ivt._T2Interrupt
                   0x000022          0x2
  .ivt._T2Interrupt
-                  0x000022          0x2 build/default/production/_ext/1472/mcal_timers.o
+                  0x000022          0x2 build/default/debug/_ext/1472/mcal_timers.o
 
 .ivt._T3Interrupt
                   0x000024          0x2
  .ivt._T3Interrupt
-                  0x000024          0x2 build/default/production/_ext/1472/mcal_timers.o
+                  0x000024          0x2 build/default/debug/_ext/1472/mcal_timers.o
 
 .ivt._T4Interrupt
                   0x00004a          0x2
  .ivt._T4Interrupt
-                  0x00004a          0x2 build/default/production/_ext/1472/mcal_timers.o
+                  0x00004a          0x2 build/default/debug/_ext/1472/mcal_timers.o
 
 .ivt._T5Interrupt
                   0x00004c          0x2
  .ivt._T5Interrupt
-                  0x00004c          0x2 build/default/production/_ext/1472/mcal_timers.o
+                  0x00004c          0x2 build/default/debug/_ext/1472/mcal_timers.o
 
 .const              0x864c          0x6 load address 0x00064c  
- .const             0x864c          0x6 build/default/production/_ext/1472/hal_nRF.o
+ .const             0x864c          0x6 build/default/debug/_ext/1472/hal_nRF.o
 
 .text             0x000652       0x1308
- .text            0x000652        0x416 build/default/production/_ext/1472/hal_nRF.o
+ .text            0x000652        0x416 build/default/debug/_ext/1472/hal_nRF.o
                   0x000652                  _RF_vCloseAllPipes
                   0x000668                  _RF_vOpenPipeZero
                   0x00067e                  _RF_vSet_RxPipes
@@ -2211,13 +2250,13 @@ __c30_signature
                   0x0009e0                  _RF_vCheckIRQ
                   0x000a2a                  _test_vReceiver
                   0x000a5e                  _test_vTransmitter
- .text            0x000a68        0x304 build/default/production/_ext/1472/mcal_gpio.o
+ .text            0x000a68        0x304 build/default/debug/_ext/1472/mcal_gpio.o
                   0x000a68                  _GPIO_u8SetPortPin
                   0x000bdc                  _GPIO_u8WritePortPin
                   0x000c8a                  _GPIO_u8ReadPortPin
                   0x000d0e                  _GPIO_vWritePort
                   0x000d42                  _GPIO_u16ReadPort
- .text            0x000d6c        0x252 build/default/production/_ext/1472/mcal_pwm.o
+ .text            0x000d6c        0x252 build/default/debug/_ext/1472/mcal_pwm.o
                   0x000d6c                  _PWM1_vInit
                   0x000dbc                  _PWM2_vInit
                   0x000dea                  _PWM1_vSetPeriod
@@ -2226,7 +2265,7 @@ __c30_signature
                   0x000f16                  _PWM2_vSetDuty
                   0x000f80                  _PWM1_vSetDutyPeriod
                   0x000fa8                  _PWM2_vSetDutyPeriod
- .text            0x000fbe        0x22e build/default/production/_ext/1472/mcal_spi.o
+ .text            0x000fbe        0x22e build/default/debug/_ext/1472/mcal_spi.o
                   0x000fbe                  _SPI_RF_u8RxBuffOvf
                   0x000fcc                  _SPI_RF_u8TxBuffFull
                   0x000fda                  _SPI_RF_u8RxBuffFull
@@ -2237,7 +2276,7 @@ __c30_signature
                   0x0010c2                  _SPI_RF_u8TxCmd
                   0x00112c                  _SPI_RF_u8ReadReg_5Bytes
                   0x00118e                  _SPI_RF_u8WriteReg_5Bytes
- .text            0x0011ec        0x212 build/default/production/_ext/1472/mcal_timers.o
+ .text            0x0011ec        0x212 build/default/debug/_ext/1472/mcal_timers.o
                   0x0011ec                  _TIM2_vInit
                   0x001216                  _TIM2_vStart
                   0x001222                  _TIM2_vStop
@@ -2269,44 +2308,44 @@ __c30_signature
                   0x0013de                  _TIM5_vSetCount
                   0x0013ea                  _TIM5_vSetCountLimit
                   0x0013f6                  _TIM5_u16GetCount
- .text            0x0013fe        0x170 build/default/production/_ext/1472/asw_move.o
+ .text            0x0013fe        0x170 build/default/debug/_ext/1472/asw_move.o
                   0x0013fe                  _ASW_moveInit
                   0x001406                  _ASW_dirInit
                   0x00140e                  _ASW_moveAround
                   0x0014e4                  _ASW_turnWheels
- .text            0x00156e        0x102 build/default/production/_ext/1472/sys_schedule.o
+ .text            0x00156e        0x102 build/default/debug/_ext/1472/sys_schedule.o
                   0x00156e                  _TASK_vSchedule
                   0x001604                  _test_pin_setup
                   0x001616                  _test_vToggle_CSN
                   0x001634                  _test_vToggle_CE
                   0x001652                  _test_vToggle_IRQ
- .text            0x001670         0x86 build/default/production/_ext/1472/mcal_interrupts.o
+ .text            0x001670         0x86 build/default/debug/_ext/1472/mcal_interrupts.o
                   0x001670                  _INT_vInit
                   0x001684                  _INT0_vInit
                   0x0016a4                  _INT1_vInit
                   0x0016ca                  _INT2_vInit
- .text            0x0016f6         0x80 build/default/production/_ext/1472/light_sig.o
+ .text            0x0016f6         0x80 build/default/debug/_ext/1472/light_sig.o
                   0x0016f6                  _light_obstacle
                   0x00172c                  _light_battery_low
- .text            0x001776         0x58 build/default/production/_ext/1472/mcal_adc.o
+ .text            0x001776         0x58 build/default/debug/_ext/1472/mcal_adc.o
                   0x001776                  _ADC_vInit
                   0x001790                  _ADC_u16Read
- .text            0x0017ce         0x4a build/default/production/_ext/1472/asw_com.o
+ .text            0x0017ce         0x4a build/default/debug/_ext/1472/asw_com.o
                   0x0017ce                  _COM_vInit
                   0x0017d4                  _COM_vSendMessage
                   0x0017e0                  _COM_vStartListening
                   0x0017e8                  _COM_vProcessMessage
                   0x0017f0                  _COM_vProcessFIFO
- .text            0x001818         0x4a build/default/production/_ext/1472/math_helper.o
+ .text            0x001818         0x4a build/default/debug/_ext/1472/math_helper.o
                   0x001818                  _clamp
- .text            0x001862         0x48 build/default/production/_ext/1472/mcal_encoder.o
+ .text            0x001862         0x48 build/default/debug/_ext/1472/mcal_encoder.o
                   0x001862                  _QEI_vInit
                   0x001898                  _QEI_u16getCount
                   0x0018a0                  _QEI_vResetCount
- .text            0x0018aa         0x44 build/default/production/_ext/1472/hal_servo.o
+ .text            0x0018aa         0x44 build/default/debug/_ext/1472/hal_servo.o
                   0x0018aa                  _HAL_vServoInit
                   0x0018b2                  _HAL_vServoSetPosition
- .text            0x0018ee         0x3c build/default/production/_ext/1472/sys_tasks.o
+ .text            0x0018ee         0x3c build/default/debug/_ext/1472/sys_tasks.o
                   0x0018ee                  _TASK_Inits
                   0x001902                  _TASK_1ms
                   0x001908                  _TASK_5ms
@@ -2314,7 +2353,7 @@ __c30_signature
                   0x001916                  _TASK_100ms
                   0x00191e                  _TASK_500ms
                   0x001924                  _TASK_1000ms
- .text            0x00192a         0x30 build/default/production/_ext/1472/hal_dc.o
+ .text            0x00192a         0x30 build/default/debug/_ext/1472/hal_dc.o
                   0x00192a                  _HAL_vMotorInit
                   0x00193c                  _HAL_vMotorSetDir
                   0x00194c                  _HAL_vMotorSetSpeed
@@ -2327,9 +2366,9 @@ __c30_signature
                   0x001980                  ___delay32
 
 .text             0x00199c         0x2e
- .text            0x00199c         0x16 build/default/production/_ext/1472/mcal_init.o
+ .text            0x00199c         0x16 build/default/debug/_ext/1472/mcal_init.o
                   0x00199c                  _MCAL_vInit
- .text            0x0019b2         0x10 build/default/production/_ext/1472/mcal_osc.o
+ .text            0x0019b2         0x10 build/default/debug/_ext/1472/mcal_osc.o
                   0x0019b2                  _OSC_vInit
- .text            0x0019c2          0x8 build/default/production/_ext/1472/main.o
+ .text            0x0019c2          0x8 build/default/debug/_ext/1472/main.o
                   0x0019c2                  _main
