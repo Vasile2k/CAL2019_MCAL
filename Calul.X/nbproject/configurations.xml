@@ -25,6 +25,7 @@
       <itemPath>../asw_move.h</itemPath>
       <itemPath>../hal_servo.h</itemPath>
       <itemPath>../math_helper.h</itemPath>
+      <itemPath>../hal_lf.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -52,6 +53,7 @@
       <itemPath>../asw_move.c</itemPath>
       <itemPath>../hal_servo.c</itemPath>
       <itemPath>../math_helper.c</itemPath>
+      <itemPath>../hal_lf.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
