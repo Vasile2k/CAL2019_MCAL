@@ -14,4 +14,9 @@ build/default/production/_ext/1472/sys_tasks.o:  \
 ../mcal_encoder.h  \
  ../asw_com.h  \
 ../light_sig.h  \
-../asw_move.h 
+../asw_move.h  \
+../hal_lf.h  \
+../rte.h  \
+ ../hal_dc.h  \
+../hal_servo.h  \
+../asw_lf.h 

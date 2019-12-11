@@ -6,4 +6,5 @@ build/default/production/_ext/1472/asw_move.o:  \
 ../general.h  \
 ../general_types.h  \
  ../mcal_gpio.h  \
-../hal_servo.h 
+../hal_servo.h  \
+../hal_lf.h 

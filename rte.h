@@ -14,6 +14,7 @@ extern "C" {
 
 #include "hal_dc.h"
 #include "hal_servo.h"
+#include "hal_lf.h"
     
 #define RTE_vMotorInit HAL_vMotorInit
 #define RTE_vMotorSetDir HAL_vMotorSetDir
@@ -21,6 +22,10 @@ extern "C" {
 
 #define RTE_vServoInit HAL_vServoInit
 #define RTE_vServoSetPosition HAL_vServoSetPosition
+
+#define RTE_vSetLineFollower HAL_vSetLineFollower
+#define RTE_vWriteLineFollower HAL_vWriteLineFollower
+#define RTE_vGetLineFollower HAL_vGetLineFollower
 
 #ifdef	__cplusplus
 }

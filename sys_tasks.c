@@ -14,13 +14,18 @@
 #include "light_sig.h"
 
 #include "asw_move.h"
+#include "asw_move.h"
+
+#include "hal_lf.h"
+#include "rte.h"
+#include "asw_lf.h"
 
 void TASK_Inits()
 {
     MCAL_vInit();
     GPIO_u8SetPortPin(PORT_A, 10, DIGITAL ,OUTPUT);
     ASW_moveInit();
-    ASW_dirInit();
+//    ASW_dirInit();
 }
 
 void TASK_1ms()
@@ -36,12 +41,13 @@ void TASK_5ms()
 void TASK_10ms()
 {
     light_battery_low();
+    ASW_vfollowLine();
 }
 
 void TASK_100ms()
 { 
 //    ASW_moveAround();
-    ASW_turnWheels();
+//    ASW_turnWheels();
 }
 
 void TASK_500ms()

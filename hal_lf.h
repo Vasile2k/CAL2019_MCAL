@@ -22,7 +22,7 @@ extern "C" {
  * Function to set the state of the line follower as input/output
  * @param The value to be set, 1 - input, 0 - output
  */
-extern void HAL_vSetLineFollower(T_U8);
+extern void HAL_vSetLineFollower(BOOL);
 
 /**
  * Function to write a logic value to the line follower module
