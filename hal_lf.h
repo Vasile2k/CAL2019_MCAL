@@ -15,6 +15,8 @@ extern "C" {
 #endif
 
 #include "general.h"
+#include "mcal_gpio.h"
+
 
 /**
  * Function to set the state of the line follower as input/output
@@ -24,7 +26,7 @@ extern void HAL_vSetLineFollower(T_U8);
 
 /**
  * Function to write a logic value to the line follower module
- * @param 1/0
+ * @param INPUT or OUTPUT
  */
 extern void HAL_vWriteLineFollower(BOOL);
 
@@ -32,7 +34,7 @@ extern void HAL_vWriteLineFollower(BOOL);
  * Function to get the value of the line follower module
  * @return the value as the 5 least significant bits
  */
-extern T_U8 HALvGetLineFollower();
+extern T_U8 HAL_vGetLineFollower();
 
 
 #ifdef	__cplusplus
