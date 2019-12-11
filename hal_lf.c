@@ -2,7 +2,8 @@
 #include "mcal_gpio.h"
 
 void HAL_vSetLineFollower(T_U8 direction){
-    for(T_U8 pin = 0; pin < 6; ++pin){
+    T_U8 pin;
+    for(pin = 0; pin < 6; ++pin){
         GPIO_u8SetPortPin(PORT_C, 0, DIGITAL, direction);
     }
 }
