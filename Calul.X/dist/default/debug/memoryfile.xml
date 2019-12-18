@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/default/production/Calul.X.production.elf">
+  <executable name="dist/default/debug/Calul.X.debug.elf">
     <memory name="data">
       <units>bytes</units>
       <length>16384</length>
-      <used>64</used>
-      <free>16320</free>
+      <used>144</used>
+      <free>16240</free>
     </memory>
     <memory name="program">
       <units>bytes</units>
       <length>131328</length>
-      <used>9609</used>
-      <free>121719</free>
+      <used>9540</used>
+      <free>121788</free>
     </memory>
   </executable>
 </project>

@@ -14,7 +14,8 @@ extern "C" {
 
 #include "asw_lf.h"
 #include "rte.h"
-    
+
+T_F16 getDirectionFromLF(T_U16 input);
 extern void ASW_vfollowLine();
 
 #ifdef	__cplusplus

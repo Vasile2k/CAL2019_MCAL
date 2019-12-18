@@ -32,7 +32,7 @@ extern void HAL_vWriteLineFollower(BOOL);
 
 /**
  * Function to get the value of the line follower module
- * @return the value as the 5 least significant bits
+ * @return the value as the 6 least significant bits
  */
 extern T_U8 HAL_vGetLineFollower();
 
