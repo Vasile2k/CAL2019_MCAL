@@ -1,14 +1,33 @@
 #include "asw_lf.h"
 #include "rte.h"
 
+#define AVERAGE_WINDOW 4
+
 void ASW_vfollowLine(){
+    // Meadian filter on last N elements
+    // Hope this shit works, otherwise I'm gonna cut my penis
+    static T_F16 values[AVERAGE_WINDOW] = { [0 ... (AVERAGE_WINDOW - 1)] = 3.5 };
+    static int pos = 0;
+    
     RTE_vMotorSetDir(FORWARD);
-    RTE_vMotorSetSpeed(30);
+    RTE_vMotorSetSpeed(90);
     T_U16 lf = RTE_vGetLineFollower();
-    T_F16 position = 3.0 - getDirectionFromLF(lf);
+    T_F16 dir = getDirectionFromLF(lf);
     // If we lose signal, keep last known position
-    if(lf != -1){
-        RTE_vServoSetPosition(90 + position * 10.0);
+    if(dir != -1){
+        T_F16 position = (T_F16)3.5 - dir;
+        pos++;
+        pos %= AVERAGE_WINDOW;
+        values[pos] = position;
+        
+        T_F16 mean = 0;
+        int i = 0;
+        for(i = 0; i < AVERAGE_WINDOW; ++i){
+            mean += values[i];
+        }
+        mean /= AVERAGE_WINDOW;
+        
+        RTE_vServoSetPosition(90 + mean * 20.0);
     }
 }
 

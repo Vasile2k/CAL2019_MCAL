@@ -4,11 +4,11 @@ Tool Name:
   c:\program files (x86)\microchip\xc16\v1.36\bin\bin\..\bin/elf-ld.exe
 
 Command:
-  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000a2c.00 \
-  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000a2c.01 \
-  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000a2c.02 \
-  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000a2c.03 \
-  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp00000a2c.04 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp000005b0.00 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp000005b0.01 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp000005b0.02 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp000005b0.03 \
+  -TC:\\Users\\student\\AppData\\Local\\Temp\\tmp000005b0.04 \
   -p33FJ128MC804 \
   -o \
   dist/default/debug/Calul.X.debug.elf \
@@ -45,6 +45,7 @@ Command:
   --defsym=__MPLAB_BUILD=1 \
   --defsym=__MPLAB_DEBUG=1 \
   --defsym=__DEBUG=1 \
+  --defsym=__MPLAB_DEBUGGER_PK3=1 \
   -Tp33FJ128MC804.gld.05 \
   --stack=16 \
   --check-sections \
@@ -119,12 +120,12 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x472           0x6ab  (1707)
 .const                       0x672                 0x6             0x9  (9)
-.text                        0x678              0x13f0          0x1de8  (7656)
-.dinit                      0x1a68                0x26            0x39  (57)
-.init.delay32               0x1a8e                0x1c            0x2a  (42)
-.text                       0x1aaa                0x2e            0x45  (69)
+.text                        0x678              0x141c          0x1e2a  (7722)
+.dinit                      0x1a94                0x26            0x39  (57)
+.init.delay32               0x1aba                0x1c            0x2a  (42)
+.text                       0x1ad6                0x2e            0x45  (69)
 
-                 Total "program" memory used (bytes):         0x2544  (9540) 7%
+                 Total "program" memory used (bytes):         0x2586  (9606) 7%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x4000]
@@ -315,77 +316,77 @@ External Symbols in Program Memory (by address):
                   0x00160e                  _test_vToggle_CE
                   0x00162c                  _test_vToggle_IRQ
                   0x00164a                  _ASW_vfollowLine
-                  0x001666                  _getDirectionFromLF
-                  0x001710                  _INT_vInit
-                  0x001724                  _INT0_vInit
-                  0x001744                  _INT1_vInit
-                  0x00176a                  _INT2_vInit
-                  0x001796                  _light_obstacle
-                  0x0017cc                  _light_battery_low
-                  0x001816                  _HAL_vSetLineFollower
-                  0x001836                  _HAL_vWriteLineFollower
-                  0x00185a                  _HAL_vGetLineFollower
-                  0x001884                  _ADC_vInit
-                  0x00189e                  _ADC_u16Read
-                  0x0018dc                  _COM_vInit
-                  0x0018e2                  _COM_vSendMessage
-                  0x0018ee                  _COM_vStartListening
-                  0x0018f6                  _COM_vProcessMessage
-                  0x0018fe                  _COM_vProcessFIFO
-                  0x001926                  _clamp
-                  0x001970                  _QEI_vInit
-                  0x0019a6                  _QEI_u16getCount
-                  0x0019ae                  _QEI_vResetCount
-                  0x0019b8                  _HAL_vServoInit
-                  0x0019c0                  _HAL_vServoSetPosition
-                  0x0019fc                  _TASK_Inits
-                  0x001a10                  _TASK_1ms
-                  0x001a16                  _TASK_5ms
-                  0x001a1c                  _TASK_10ms
-                  0x001a26                  _TASK_100ms
-                  0x001a2c                  _TASK_500ms
-                  0x001a32                  _TASK_1000ms
-                  0x001a38                  _HAL_vMotorInit
-                  0x001a4a                  _HAL_vMotorSetDir
-                  0x001a5a                  _HAL_vMotorSetSpeed
-                  0x001a8e                  ___delay32
-                  0x001aaa                  _MCAL_vInit
-                  0x001ac0                  _OSC_vInit
-                  0x001ad0                  _main
+                  0x001686                  _getDirectionFromLF
+                  0x00173c                  _INT_vInit
+                  0x001750                  _INT0_vInit
+                  0x001770                  _INT1_vInit
+                  0x001796                  _INT2_vInit
+                  0x0017c2                  _light_obstacle
+                  0x0017f8                  _light_battery_low
+                  0x001842                  _HAL_vSetLineFollower
+                  0x001862                  _HAL_vWriteLineFollower
+                  0x001886                  _HAL_vGetLineFollower
+                  0x0018b0                  _ADC_vInit
+                  0x0018ca                  _ADC_u16Read
+                  0x001908                  _COM_vInit
+                  0x00190e                  _COM_vSendMessage
+                  0x00191a                  _COM_vStartListening
+                  0x001922                  _COM_vProcessMessage
+                  0x00192a                  _COM_vProcessFIFO
+                  0x001952                  _clamp
+                  0x00199c                  _QEI_vInit
+                  0x0019d2                  _QEI_u16getCount
+                  0x0019da                  _QEI_vResetCount
+                  0x0019e4                  _HAL_vServoInit
+                  0x0019ec                  _HAL_vServoSetPosition
+                  0x001a28                  _TASK_Inits
+                  0x001a3c                  _TASK_1ms
+                  0x001a42                  _TASK_5ms
+                  0x001a48                  _TASK_10ms
+                  0x001a50                  _TASK_100ms
+                  0x001a58                  _TASK_500ms
+                  0x001a5e                  _TASK_1000ms
+                  0x001a64                  _HAL_vMotorInit
+                  0x001a76                  _HAL_vMotorSetDir
+                  0x001a86                  _HAL_vMotorSetSpeed
+                  0x001aba                  ___delay32
+                  0x001ad6                  _MCAL_vInit
+                  0x001aec                  _OSC_vInit
+                  0x001afc                  _main
 
 External Symbols in Program Memory (by name):
 
-                  0x00189e                  _ADC_u16Read
-                  0x001884                  _ADC_vInit
+                  0x0018ca                  _ADC_u16Read
+                  0x0018b0                  _ADC_vInit
                   0x00142c                  _ASW_dirInit
                   0x001434                  _ASW_moveAround
                   0x001424                  _ASW_moveInit
                   0x00150a                  _ASW_turnWheels
                   0x00164a                  _ASW_vfollowLine
-                  0x0018dc                  _COM_vInit
-                  0x0018fe                  _COM_vProcessFIFO
-                  0x0018f6                  _COM_vProcessMessage
-                  0x0018e2                  _COM_vSendMessage
-                  0x0018ee                  _COM_vStartListening
+                  0x001908                  _COM_vInit
+                  0x00192a                  _COM_vProcessFIFO
+                  0x001922                  _COM_vProcessMessage
+                  0x00190e                  _COM_vSendMessage
+                  0x00191a                  _COM_vStartListening
                   0x000d68                  _GPIO_u16ReadPort
                   0x000cb0                  _GPIO_u8ReadPortPin
                   0x000a8e                  _GPIO_u8SetPortPin
                   0x000c02                  _GPIO_u8WritePortPin
                   0x000d34                  _GPIO_vWritePort
-                  0x00185a                  _HAL_vGetLineFollower
-                  0x001a38                  _HAL_vMotorInit
-                  0x001a4a                  _HAL_vMotorSetDir
-                  0x001a5a                  _HAL_vMotorSetSpeed
-                  0x0019b8                  _HAL_vServoInit
-                  0x0019c0                  _HAL_vServoSetPosition
-                  0x001816                  _HAL_vSetLineFollower
-                  0x001836                  _HAL_vWriteLineFollower
-                  0x001724                  _INT0_vInit
-                  0x001744                  _INT1_vInit
-                  0x00176a                  _INT2_vInit
-                  0x001710                  _INT_vInit
-                  0x001aaa                  _MCAL_vInit
-                  0x001ac0                  _OSC_vInit
+                  0x001886                  _HAL_vGetLineFollower
+                  0x001a64                  _HAL_vMotorInit
+                  0x001a76                  _HAL_vMotorSetDir
+                  0x001a86                  _HAL_vMotorSetSpeed
+                  0x0019e4                  _HAL_vServoInit
+                  0x0019ec                  _HAL_vServoSetPosition
+                  0x001842                  _HAL_vSetLineFollower
+                  0x001862                  _HAL_vWriteLineFollower
+                  0x001750                  _INT0_vInit
+                  0x001770                  _INT1_vInit
+                  0x001796                  _INT2_vInit
+                  0x00173c                  _INT_vInit
+                  0x001ad6                  _MCAL_vInit
+                  0x001aec                  _OSC_vInit
                   0x000d92                  _PWM1_vInit
                   0x000e48                  _PWM1_vSetDuty
                   0x000fa6                  _PWM1_vSetDutyPeriod
@@ -394,9 +395,9 @@ External Symbols in Program Memory (by name):
                   0x000f3c                  _PWM2_vSetDuty
                   0x000fce                  _PWM2_vSetDutyPeriod
                   0x000e2c                  _PWM2_vSetPeriod
-                  0x0019a6                  _QEI_u16getCount
-                  0x001970                  _QEI_vInit
-                  0x0019ae                  _QEI_vResetCount
+                  0x0019d2                  _QEI_u16getCount
+                  0x00199c                  _QEI_vInit
+                  0x0019da                  _QEI_vResetCount
                   0x0008fa                  _RF_u8Get_FifoStatus
                   0x0008ec                  _RF_u8Get_ObsTx
                   0x0008de                  _RF_u8Get_Status
@@ -437,13 +438,13 @@ External Symbols in Program Memory (by name):
                   0x0011b4                  _SPI_RF_u8WriteReg_5Bytes
                   0x00106a                  _SPI_RF_vDisable
                   0x00100e                  _SPI_RF_vInit
-                  0x001a32                  _TASK_1000ms
-                  0x001a26                  _TASK_100ms
-                  0x001a1c                  _TASK_10ms
-                  0x001a10                  _TASK_1ms
-                  0x001a2c                  _TASK_500ms
-                  0x001a16                  _TASK_5ms
-                  0x0019fc                  _TASK_Inits
+                  0x001a5e                  _TASK_1000ms
+                  0x001a50                  _TASK_100ms
+                  0x001a48                  _TASK_10ms
+                  0x001a3c                  _TASK_1ms
+                  0x001a58                  _TASK_500ms
+                  0x001a42                  _TASK_5ms
+                  0x001a28                  _TASK_Inits
                   0x001548                  _TASK_vSchedule
                   0x0012a6                  _TIM2_u16GetCount
                   0x001212                  _TIM2_vInit
@@ -485,7 +486,7 @@ External Symbols in Program Memory (by name):
                   0x000312                  __T4Interrupt
                   0x00031a                  __T5Interrupt
                   0x00032a                  ___addsf3
-                  0x001a8e                  ___delay32
+                  0x001aba                  ___delay32
                   0x0003e4                  ___divsf3
                   0x000468                  ___eqsf2
                   0x000470                  ___fixunssfsi
@@ -510,11 +511,11 @@ External Symbols in Program Memory (by name):
                   0x000526                  __funpack2
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x001926                  _clamp
-                  0x001666                  _getDirectionFromLF
-                  0x0017cc                  _light_battery_low
-                  0x001796                  _light_obstacle
-                  0x001ad0                  _main
+                  0x001952                  _clamp
+                  0x001686                  _getDirectionFromLF
+                  0x0017f8                  _light_battery_low
+                  0x0017c2                  _light_obstacle
+                  0x001afc                  _main
                   0x0015de                  _test_pin_setup
                   0x000a50                  _test_vReceiver
                   0x00160e                  _test_vToggle_CE
@@ -596,6 +597,7 @@ LOAD build/default/debug/_ext/1472/asw_lf.o
                     0x0001                  __MPLAB_BUILD = 0x1
                     0x0001                  __MPLAB_DEBUG = 0x1
                     0x0001                  __DEBUG = 0x1
+                    0x0001                  __MPLAB_DEBUGGER_PK3 = 0x1
 LOAD p33FJ128MC804
 LOAD c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\libfx-elf.a
                     0xf80000                  __FBS = 0xf80000
@@ -748,7 +750,7 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x90aa
+.debug_info       0x000000       0x909c
  *(.debug_info)
  .debug_info      0x000000        0x2d3 build/default/debug/_ext/1472/asw_com.o
  .debug_info      0x0002d3        0x91e build/default/debug/_ext/1472/hal_nRF.o
@@ -770,7 +772,7 @@ __FUID3
  .debug_info      0x0087dd        0x1c5 build/default/debug/_ext/1472/hal_servo.o
  .debug_info      0x0089a2        0x1a5 build/default/debug/_ext/1472/math_helper.o
  .debug_info      0x008b47        0x26c build/default/debug/_ext/1472/hal_lf.o
- .debug_info      0x008db3        0x2f7 build/default/debug/_ext/1472/asw_lf.o
+ .debug_info      0x008db3        0x2e9 build/default/debug/_ext/1472/asw_lf.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000       0x1073
@@ -797,7 +799,7 @@ __FUID3
  .debug_abbrev    0x000f12         0x8e build/default/debug/_ext/1472/hal_lf.o
  .debug_abbrev    0x000fa0         0xd3 build/default/debug/_ext/1472/asw_lf.o
 
-.debug_line       0x000000       0x1186
+.debug_line       0x000000       0x118a
  *(.debug_line)
  .debug_line      0x000000         0x60 build/default/debug/_ext/1472/asw_com.o
  .debug_line      0x000060        0x159 build/default/debug/_ext/1472/hal_nRF.o
@@ -819,7 +821,7 @@ __FUID3
  .debug_line      0x001008         0x57 build/default/debug/_ext/1472/hal_servo.o
  .debug_line      0x00105f         0x59 build/default/debug/_ext/1472/math_helper.o
  .debug_line      0x0010b8         0x60 build/default/debug/_ext/1472/hal_lf.o
- .debug_line      0x001118         0x6e build/default/debug/_ext/1472/asw_lf.o
+ .debug_line      0x001118         0x72 build/default/debug/_ext/1472/asw_lf.o
 
 .debug_frame      0x000000       0x110e
  *(.debug_frame)
@@ -2266,7 +2268,7 @@ __c30_signature
 .const              0x8672          0x6 load address 0x000672  
  .const             0x8672          0x6 build/default/debug/_ext/1472/hal_nRF.o
 
-.text             0x000678       0x13f0
+.text             0x000678       0x141c
  .text            0x000678        0x416 build/default/debug/_ext/1472/hal_nRF.o
                   0x000678                  _RF_vCloseAllPipes
                   0x00068e                  _RF_vOpenPipeZero
@@ -2369,63 +2371,63 @@ __c30_signature
                   0x0015f0                  _test_vToggle_CSN
                   0x00160e                  _test_vToggle_CE
                   0x00162c                  _test_vToggle_IRQ
- .text            0x00164a         0xc6 build/default/debug/_ext/1472/asw_lf.o
+ .text            0x00164a         0xf2 build/default/debug/_ext/1472/asw_lf.o
                   0x00164a                  _ASW_vfollowLine
-                  0x001666                  _getDirectionFromLF
- .text            0x001710         0x86 build/default/debug/_ext/1472/mcal_interrupts.o
-                  0x001710                  _INT_vInit
-                  0x001724                  _INT0_vInit
-                  0x001744                  _INT1_vInit
-                  0x00176a                  _INT2_vInit
- .text            0x001796         0x80 build/default/debug/_ext/1472/light_sig.o
-                  0x001796                  _light_obstacle
-                  0x0017cc                  _light_battery_low
- .text            0x001816         0x6e build/default/debug/_ext/1472/hal_lf.o
-                  0x001816                  _HAL_vSetLineFollower
-                  0x001836                  _HAL_vWriteLineFollower
-                  0x00185a                  _HAL_vGetLineFollower
- .text            0x001884         0x58 build/default/debug/_ext/1472/mcal_adc.o
-                  0x001884                  _ADC_vInit
-                  0x00189e                  _ADC_u16Read
- .text            0x0018dc         0x4a build/default/debug/_ext/1472/asw_com.o
-                  0x0018dc                  _COM_vInit
-                  0x0018e2                  _COM_vSendMessage
-                  0x0018ee                  _COM_vStartListening
-                  0x0018f6                  _COM_vProcessMessage
-                  0x0018fe                  _COM_vProcessFIFO
- .text            0x001926         0x4a build/default/debug/_ext/1472/math_helper.o
-                  0x001926                  _clamp
- .text            0x001970         0x48 build/default/debug/_ext/1472/mcal_encoder.o
-                  0x001970                  _QEI_vInit
-                  0x0019a6                  _QEI_u16getCount
-                  0x0019ae                  _QEI_vResetCount
- .text            0x0019b8         0x44 build/default/debug/_ext/1472/hal_servo.o
-                  0x0019b8                  _HAL_vServoInit
-                  0x0019c0                  _HAL_vServoSetPosition
- .text            0x0019fc         0x3c build/default/debug/_ext/1472/sys_tasks.o
-                  0x0019fc                  _TASK_Inits
-                  0x001a10                  _TASK_1ms
-                  0x001a16                  _TASK_5ms
-                  0x001a1c                  _TASK_10ms
-                  0x001a26                  _TASK_100ms
-                  0x001a2c                  _TASK_500ms
-                  0x001a32                  _TASK_1000ms
- .text            0x001a38         0x30 build/default/debug/_ext/1472/hal_dc.o
-                  0x001a38                  _HAL_vMotorInit
-                  0x001a4a                  _HAL_vMotorSetDir
-                  0x001a5a                  _HAL_vMotorSetSpeed
+                  0x001686                  _getDirectionFromLF
+ .text            0x00173c         0x86 build/default/debug/_ext/1472/mcal_interrupts.o
+                  0x00173c                  _INT_vInit
+                  0x001750                  _INT0_vInit
+                  0x001770                  _INT1_vInit
+                  0x001796                  _INT2_vInit
+ .text            0x0017c2         0x80 build/default/debug/_ext/1472/light_sig.o
+                  0x0017c2                  _light_obstacle
+                  0x0017f8                  _light_battery_low
+ .text            0x001842         0x6e build/default/debug/_ext/1472/hal_lf.o
+                  0x001842                  _HAL_vSetLineFollower
+                  0x001862                  _HAL_vWriteLineFollower
+                  0x001886                  _HAL_vGetLineFollower
+ .text            0x0018b0         0x58 build/default/debug/_ext/1472/mcal_adc.o
+                  0x0018b0                  _ADC_vInit
+                  0x0018ca                  _ADC_u16Read
+ .text            0x001908         0x4a build/default/debug/_ext/1472/asw_com.o
+                  0x001908                  _COM_vInit
+                  0x00190e                  _COM_vSendMessage
+                  0x00191a                  _COM_vStartListening
+                  0x001922                  _COM_vProcessMessage
+                  0x00192a                  _COM_vProcessFIFO
+ .text            0x001952         0x4a build/default/debug/_ext/1472/math_helper.o
+                  0x001952                  _clamp
+ .text            0x00199c         0x48 build/default/debug/_ext/1472/mcal_encoder.o
+                  0x00199c                  _QEI_vInit
+                  0x0019d2                  _QEI_u16getCount
+                  0x0019da                  _QEI_vResetCount
+ .text            0x0019e4         0x44 build/default/debug/_ext/1472/hal_servo.o
+                  0x0019e4                  _HAL_vServoInit
+                  0x0019ec                  _HAL_vServoSetPosition
+ .text            0x001a28         0x3c build/default/debug/_ext/1472/sys_tasks.o
+                  0x001a28                  _TASK_Inits
+                  0x001a3c                  _TASK_1ms
+                  0x001a42                  _TASK_5ms
+                  0x001a48                  _TASK_10ms
+                  0x001a50                  _TASK_100ms
+                  0x001a58                  _TASK_500ms
+                  0x001a5e                  _TASK_1000ms
+ .text            0x001a64         0x30 build/default/debug/_ext/1472/hal_dc.o
+                  0x001a64                  _HAL_vMotorInit
+                  0x001a76                  _HAL_vMotorSetDir
+                  0x001a86                  _HAL_vMotorSetSpeed
 
-.dinit            0x001a68         0x26
- .dinit           0x001a68         0x26 data_init
+.dinit            0x001a94         0x26
+ .dinit           0x001a94         0x26 data_init
 
-.init.delay32     0x001a8e         0x1c
- .init.delay32    0x001a8e         0x1c c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
-                  0x001a8e                  ___delay32
+.init.delay32     0x001aba         0x1c
+ .init.delay32    0x001aba         0x1c c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+                  0x001aba                  ___delay32
 
-.text             0x001aaa         0x2e
- .text            0x001aaa         0x16 build/default/debug/_ext/1472/mcal_init.o
-                  0x001aaa                  _MCAL_vInit
- .text            0x001ac0         0x10 build/default/debug/_ext/1472/mcal_osc.o
-                  0x001ac0                  _OSC_vInit
- .text            0x001ad0          0x8 build/default/debug/_ext/1472/main.o
-                  0x001ad0                  _main
+.text             0x001ad6         0x2e
+ .text            0x001ad6         0x16 build/default/debug/_ext/1472/mcal_init.o
+                  0x001ad6                  _MCAL_vInit
+ .text            0x001aec         0x10 build/default/debug/_ext/1472/mcal_osc.o
+                  0x001aec                  _OSC_vInit
+ .text            0x001afc          0x8 build/default/debug/_ext/1472/main.o
+                  0x001afc                  _main
