@@ -15,6 +15,7 @@ extern "C" {
 #include "hal_dc.h"
 #include "hal_servo.h"
 #include "hal_lf.h"
+#include "hal_battery.h"
     
 #define RTE_vMotorInit HAL_vMotorInit
 #define RTE_vMotorSetDir HAL_vMotorSetDir
@@ -26,6 +27,8 @@ extern "C" {
 #define RTE_vSetLineFollower HAL_vSetLineFollower
 #define RTE_vWriteLineFollower HAL_vWriteLineFollower
 #define RTE_vGetLineFollower HAL_vGetLineFollower
+    
+#define RTE_f16ReadBatteryPercentage HAL_f16ReadBatteryPercentage
 
 #ifdef	__cplusplus
 }

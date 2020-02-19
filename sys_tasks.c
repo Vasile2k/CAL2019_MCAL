@@ -14,17 +14,17 @@
 #include "light_sig.h"
 
 #include "asw_move.h"
-#include "asw_move.h"
 
 #include "hal_lf.h"
 #include "rte.h"
 #include "asw_lf.h"
+#include "asw_showbattery.h"
 
 void TASK_Inits()
 {
     MCAL_vInit();
     GPIO_u8SetPortPin(PORT_A, 10, DIGITAL ,OUTPUT);
-    ASW_moveInit();
+//    ASW_moveInit();
 //    ASW_dirInit();
 }
 
@@ -40,8 +40,9 @@ void TASK_5ms()
 
 void TASK_10ms()
 {
-    light_battery_low();
-    ASW_vfollowLine();
+//    light_battery_low();
+//    ASW_vfollowLine();
+    ASW_vShowBatteryPercentage();
 }
 
 void TASK_100ms()

@@ -19,4 +19,6 @@ build/default/debug/_ext/1472/sys_tasks.o:  \
 ../rte.h  \
 ../hal_dc.h  \
  ../hal_servo.h  \
-../asw_lf.h 
+../hal_battery.h  \
+../asw_lf.h  \
+../asw_showbattery.h 
