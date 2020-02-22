@@ -49,7 +49,7 @@ T_F16 HAL_f16ReadBatteryPercentage(){
     
     // Battery is read via a resistive voltage divider with a 1/4 ratio
     T_F16 battVoltage = 4*(result*AREF_VOLTAGE/USHRT_MAX);
-    for(i = 0; i < sizeof(lut)/sizeof(lut[0]) - 1; ++i){
+    for(i = 0; i < (sizeof(batteryLookupTable)/sizeof(batteryLookupTable[0]) - 1); ++i){
         if(battVoltage < lut[i + 1].voltage){
             continue;
         }
