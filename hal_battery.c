@@ -38,7 +38,7 @@ T_F16 HAL_f16ReadBatteryPercentage(){
         samples[i] = ADC_u16Read(ADC_BATTERY_CHANNEL);
     }
     
-    long long sum;
+    long long sum = 0;
     for(i = 0; i < MEDIAN_SAMPLES; ++i){
         sum += samples[i];
     }
