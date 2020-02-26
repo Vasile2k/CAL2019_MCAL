@@ -121,11 +121,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 .const                       0x8b0                 0x6             0x9  (9)
 .text                        0x8b6              0x13e2          0x1dd3  (7635)
 .dinit                      0x1c98                0x6e            0xa5  (165)
-.text                       0x1d06               0x232           0x34b  (843)
-.init.delay32               0x1f38                0x1c            0x2a  (42)
-.text                       0x1f54                0x42            0x63  (99)
+.text                       0x1d06               0x248           0x36c  (876)
+.init.delay32               0x1f4e                0x1c            0x2a  (42)
+.text                       0x1f6a                0x42            0x63  (99)
 
-                 Total "program" memory used (bytes):         0x2c61  (11361) 8%
+                 Total "program" memory used (bytes):         0x2c82  (11394) 8%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x4000]
@@ -338,33 +338,33 @@ External Symbols in Program Memory (by address):
                   0x001d5e                  _lightOff
                   0x001d6c                  _lightOn
                   0x001d7a                  _ASW_vShowBatteryPercentage
-                  0x001db0                  _COM_vInit
-                  0x001db6                  _COM_vSendMessage
-                  0x001dc2                  _COM_vStartListening
-                  0x001dca                  _COM_vProcessMessage
-                  0x001dd2                  _COM_vProcessFIFO
-                  0x001dfa                  _clamp
-                  0x001e44                  _QEI_vInit
-                  0x001e7a                  _QEI_u16getCount
-                  0x001e82                  _QEI_vResetCount
-                  0x001e8c                  _HAL_vServoInit
-                  0x001e94                  _HAL_vServoSetPosition
-                  0x001ed0                  _TASK_Inits
-                  0x001ee2                  _TASK_1ms
-                  0x001ee8                  _TASK_5ms
-                  0x001eee                  _TASK_10ms
-                  0x001ef6                  _TASK_100ms
-                  0x001efc                  _TASK_500ms
-                  0x001f02                  _TASK_1000ms
-                  0x001f08                  _HAL_vMotorInit
-                  0x001f1a                  _HAL_vMotorSetDir
-                  0x001f2a                  _HAL_vMotorSetSpeed
-                  0x001f38                  ___delay32
-                  0x001f54                  _MCAL_vInit
-                  0x001f6a                  _HAL_bGetObstacle
-                  0x001f72                  __vSetObstacleFlag
-                  0x001f7e                  _OSC_vInit
-                  0x001f8e                  _main
+                  0x001db0                  _TASK_Inits
+                  0x001dc2                  _TASK_1ms
+                  0x001dc8                  _TASK_5ms
+                  0x001dce                  _TASK_10ms
+                  0x001dec                  _TASK_100ms
+                  0x001df2                  _TASK_500ms
+                  0x001df8                  _TASK_1000ms
+                  0x001dfe                  _COM_vInit
+                  0x001e04                  _COM_vSendMessage
+                  0x001e10                  _COM_vStartListening
+                  0x001e18                  _COM_vProcessMessage
+                  0x001e20                  _COM_vProcessFIFO
+                  0x001e48                  _clamp
+                  0x001e92                  _QEI_vInit
+                  0x001ec8                  _QEI_u16getCount
+                  0x001ed0                  _QEI_vResetCount
+                  0x001eda                  _HAL_vServoInit
+                  0x001ee2                  _HAL_vServoSetPosition
+                  0x001f1e                  _HAL_vMotorInit
+                  0x001f30                  _HAL_vMotorSetDir
+                  0x001f40                  _HAL_vMotorSetSpeed
+                  0x001f4e                  ___delay32
+                  0x001f6a                  _MCAL_vInit
+                  0x001f80                  _HAL_bGetObstacle
+                  0x001f88                  __vSetObstacleFlag
+                  0x001f94                  _OSC_vInit
+                  0x001fa4                  _main
 
 External Symbols in Program Memory (by name):
 
@@ -376,32 +376,32 @@ External Symbols in Program Memory (by name):
                   0x0019e4                  _ASW_turnWheels
                   0x001d7a                  _ASW_vShowBatteryPercentage
                   0x001662                  _ASW_vfollowLine
-                  0x001db0                  _COM_vInit
-                  0x001dd2                  _COM_vProcessFIFO
-                  0x001dca                  _COM_vProcessMessage
-                  0x001db6                  _COM_vSendMessage
-                  0x001dc2                  _COM_vStartListening
+                  0x001dfe                  _COM_vInit
+                  0x001e20                  _COM_vProcessFIFO
+                  0x001e18                  _COM_vProcessMessage
+                  0x001e04                  _COM_vSendMessage
+                  0x001e10                  _COM_vStartListening
                   0x000fa6                  _GPIO_u16ReadPort
                   0x000eee                  _GPIO_u8ReadPortPin
                   0x000ccc                  _GPIO_u8SetPortPin
                   0x000e40                  _GPIO_u8WritePortPin
                   0x000f72                  _GPIO_vWritePort
-                  0x001f6a                  _HAL_bGetObstacle
+                  0x001f80                  _HAL_bGetObstacle
                   0x0017c0                  _HAL_f16ReadBatteryPercentage
                   0x001c6e                  _HAL_vGetLineFollower
-                  0x001f08                  _HAL_vMotorInit
-                  0x001f1a                  _HAL_vMotorSetDir
-                  0x001f2a                  _HAL_vMotorSetSpeed
-                  0x001e8c                  _HAL_vServoInit
-                  0x001e94                  _HAL_vServoSetPosition
+                  0x001f1e                  _HAL_vMotorInit
+                  0x001f30                  _HAL_vMotorSetDir
+                  0x001f40                  _HAL_vMotorSetSpeed
+                  0x001eda                  _HAL_vServoInit
+                  0x001ee2                  _HAL_vServoSetPosition
                   0x001c2a                  _HAL_vSetLineFollower
                   0x001c4a                  _HAL_vWriteLineFollower
                   0x001b38                  _INT0_vInit
                   0x001b58                  _INT1_vInit
                   0x001b7e                  _INT2_vInit
                   0x001b24                  _INT_vInit
-                  0x001f54                  _MCAL_vInit
-                  0x001f7e                  _OSC_vInit
+                  0x001f6a                  _MCAL_vInit
+                  0x001f94                  _OSC_vInit
                   0x000fd0                  _PWM1_vInit
                   0x001086                  _PWM1_vSetDuty
                   0x0011e4                  _PWM1_vSetDutyPeriod
@@ -410,9 +410,9 @@ External Symbols in Program Memory (by name):
                   0x00117a                  _PWM2_vSetDuty
                   0x00120c                  _PWM2_vSetDutyPeriod
                   0x00106a                  _PWM2_vSetPeriod
-                  0x001e7a                  _QEI_u16getCount
-                  0x001e44                  _QEI_vInit
-                  0x001e82                  _QEI_vResetCount
+                  0x001ec8                  _QEI_u16getCount
+                  0x001e92                  _QEI_vInit
+                  0x001ed0                  _QEI_vResetCount
                   0x000b38                  _RF_u8Get_FifoStatus
                   0x000b2a                  _RF_u8Get_ObsTx
                   0x000b1c                  _RF_u8Get_Status
@@ -453,13 +453,13 @@ External Symbols in Program Memory (by name):
                   0x0013f2                  _SPI_RF_u8WriteReg_5Bytes
                   0x0012a8                  _SPI_RF_vDisable
                   0x00124c                  _SPI_RF_vInit
-                  0x001f02                  _TASK_1000ms
-                  0x001ef6                  _TASK_100ms
-                  0x001eee                  _TASK_10ms
-                  0x001ee2                  _TASK_1ms
-                  0x001efc                  _TASK_500ms
-                  0x001ee8                  _TASK_5ms
-                  0x001ed0                  _TASK_Inits
+                  0x001df8                  _TASK_1000ms
+                  0x001dec                  _TASK_100ms
+                  0x001dce                  _TASK_10ms
+                  0x001dc2                  _TASK_1ms
+                  0x001df2                  _TASK_500ms
+                  0x001dc8                  _TASK_5ms
+                  0x001db0                  _TASK_Inits
                   0x001a22                  _TASK_vSchedule
                   0x0014e4                  _TIM2_u16GetCount
                   0x001450                  _TIM2_vInit
@@ -501,7 +501,7 @@ External Symbols in Program Memory (by name):
                   0x000348                  __T4Interrupt
                   0x000350                  __T5Interrupt
                   0x000360                  ___addsf3
-                  0x001f38                  ___delay32
+                  0x001f4e                  ___delay32
                   0x000740                  ___divdi3
                   0x00041a                  ___divsf3
                   0x00049e                  ___eqsf2
@@ -532,14 +532,14 @@ External Symbols in Program Memory (by name):
                   0x000560                  __funpack2
                   0x00023c                  __psv_init
                   0x000200                  __resetPRI
-                  0x001f72                  __vSetObstacleFlag
-                  0x001dfa                  _clamp
+                  0x001f88                  __vSetObstacleFlag
+                  0x001e48                  _clamp
                   0x00170a                  _getDirectionFromLF
                   0x001d5e                  _lightOff
                   0x001d6c                  _lightOn
                   0x001be0                  _light_battery_low
                   0x001baa                  _light_obstacle
-                  0x001f8e                  _main
+                  0x001fa4                  _main
                   0x001ab8                  _test_pin_setup
                   0x000c8e                  _test_vReceiver
                   0x001ae8                  _test_vToggle_CE
@@ -825,7 +825,7 @@ __FUID3
  .debug_abbrev    0x001142         0x61 build/default/production/_ext/1472/asw_showbattery.o
  .debug_abbrev    0x0011a3         0x8e build/default/production/_ext/1472/hal_obstacle.o
 
-.debug_line       0x000000       0x12c0
+.debug_line       0x000000       0x12c2
  *(.debug_line)
  .debug_line      0x000000         0x60 build/default/production/_ext/1472/asw_com.o
  .debug_line      0x000060        0x159 build/default/production/_ext/1472/hal_nRF.o
@@ -840,17 +840,17 @@ __FUID3
  .debug_line      0x0009a3        0x185 build/default/production/_ext/1472/mcal_spi.o
  .debug_line      0x000b28        0x1fa build/default/production/_ext/1472/mcal_timers.o
  .debug_line      0x000d22        0x150 build/default/production/_ext/1472/sys_schedule.o
- .debug_line      0x000e72         0x4b build/default/production/_ext/1472/sys_tasks.o
- .debug_line      0x000ebd         0x62 build/default/production/_ext/1472/light_sig.o
- .debug_line      0x000f1f         0x64 build/default/production/_ext/1472/hal_dc.o
- .debug_line      0x000f83         0x87 build/default/production/_ext/1472/asw_move.o
- .debug_line      0x00100a         0x57 build/default/production/_ext/1472/hal_servo.o
- .debug_line      0x001061         0x59 build/default/production/_ext/1472/math_helper.o
- .debug_line      0x0010ba         0x60 build/default/production/_ext/1472/hal_lf.o
- .debug_line      0x00111a         0x7d build/default/production/_ext/1472/asw_lf.o
- .debug_line      0x001197         0x6d build/default/production/_ext/1472/hal_battery.o
- .debug_line      0x001204         0x65 build/default/production/_ext/1472/asw_showbattery.o
- .debug_line      0x001269         0x57 build/default/production/_ext/1472/hal_obstacle.o
+ .debug_line      0x000e72         0x4d build/default/production/_ext/1472/sys_tasks.o
+ .debug_line      0x000ebf         0x62 build/default/production/_ext/1472/light_sig.o
+ .debug_line      0x000f21         0x64 build/default/production/_ext/1472/hal_dc.o
+ .debug_line      0x000f85         0x87 build/default/production/_ext/1472/asw_move.o
+ .debug_line      0x00100c         0x57 build/default/production/_ext/1472/hal_servo.o
+ .debug_line      0x001063         0x59 build/default/production/_ext/1472/math_helper.o
+ .debug_line      0x0010bc         0x60 build/default/production/_ext/1472/hal_lf.o
+ .debug_line      0x00111c         0x7d build/default/production/_ext/1472/asw_lf.o
+ .debug_line      0x001199         0x6d build/default/production/_ext/1472/hal_battery.o
+ .debug_line      0x001206         0x65 build/default/production/_ext/1472/asw_showbattery.o
+ .debug_line      0x00126b         0x57 build/default/production/_ext/1472/hal_obstacle.o
 
 .debug_frame      0x000000       0x121c
  *(.debug_frame)
@@ -2466,7 +2466,7 @@ __c30_signature
 .dinit            0x001c98         0x6e
  .dinit           0x001c98         0x6e data_init
 
-.text             0x001d06        0x232
+.text             0x001d06        0x248
  .text            0x001d06         0x58 build/default/production/_ext/1472/mcal_adc.o
                   0x001d06                  _ADC_vInit
                   0x001d20                  _ADC_u16Read
@@ -2474,45 +2474,45 @@ __c30_signature
                   0x001d5e                  _lightOff
                   0x001d6c                  _lightOn
                   0x001d7a                  _ASW_vShowBatteryPercentage
- .text            0x001db0         0x4a build/default/production/_ext/1472/asw_com.o
-                  0x001db0                  _COM_vInit
-                  0x001db6                  _COM_vSendMessage
-                  0x001dc2                  _COM_vStartListening
-                  0x001dca                  _COM_vProcessMessage
-                  0x001dd2                  _COM_vProcessFIFO
- .text            0x001dfa         0x4a build/default/production/_ext/1472/math_helper.o
-                  0x001dfa                  _clamp
- .text            0x001e44         0x48 build/default/production/_ext/1472/mcal_encoder.o
-                  0x001e44                  _QEI_vInit
-                  0x001e7a                  _QEI_u16getCount
-                  0x001e82                  _QEI_vResetCount
- .text            0x001e8c         0x44 build/default/production/_ext/1472/hal_servo.o
-                  0x001e8c                  _HAL_vServoInit
-                  0x001e94                  _HAL_vServoSetPosition
- .text            0x001ed0         0x38 build/default/production/_ext/1472/sys_tasks.o
-                  0x001ed0                  _TASK_Inits
-                  0x001ee2                  _TASK_1ms
-                  0x001ee8                  _TASK_5ms
-                  0x001eee                  _TASK_10ms
-                  0x001ef6                  _TASK_100ms
-                  0x001efc                  _TASK_500ms
-                  0x001f02                  _TASK_1000ms
- .text            0x001f08         0x30 build/default/production/_ext/1472/hal_dc.o
-                  0x001f08                  _HAL_vMotorInit
-                  0x001f1a                  _HAL_vMotorSetDir
-                  0x001f2a                  _HAL_vMotorSetSpeed
+ .text            0x001db0         0x4e build/default/production/_ext/1472/sys_tasks.o
+                  0x001db0                  _TASK_Inits
+                  0x001dc2                  _TASK_1ms
+                  0x001dc8                  _TASK_5ms
+                  0x001dce                  _TASK_10ms
+                  0x001dec                  _TASK_100ms
+                  0x001df2                  _TASK_500ms
+                  0x001df8                  _TASK_1000ms
+ .text            0x001dfe         0x4a build/default/production/_ext/1472/asw_com.o
+                  0x001dfe                  _COM_vInit
+                  0x001e04                  _COM_vSendMessage
+                  0x001e10                  _COM_vStartListening
+                  0x001e18                  _COM_vProcessMessage
+                  0x001e20                  _COM_vProcessFIFO
+ .text            0x001e48         0x4a build/default/production/_ext/1472/math_helper.o
+                  0x001e48                  _clamp
+ .text            0x001e92         0x48 build/default/production/_ext/1472/mcal_encoder.o
+                  0x001e92                  _QEI_vInit
+                  0x001ec8                  _QEI_u16getCount
+                  0x001ed0                  _QEI_vResetCount
+ .text            0x001eda         0x44 build/default/production/_ext/1472/hal_servo.o
+                  0x001eda                  _HAL_vServoInit
+                  0x001ee2                  _HAL_vServoSetPosition
+ .text            0x001f1e         0x30 build/default/production/_ext/1472/hal_dc.o
+                  0x001f1e                  _HAL_vMotorInit
+                  0x001f30                  _HAL_vMotorSetDir
+                  0x001f40                  _HAL_vMotorSetSpeed
 
-.init.delay32     0x001f38         0x1c
- .init.delay32    0x001f38         0x1c c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
-                  0x001f38                  ___delay32
+.init.delay32     0x001f4e         0x1c
+ .init.delay32    0x001f4e         0x1c c:/program files (x86)/microchip/xc16/v1.36/bin/bin/../../lib\liblega-pic30-elf.a(delay32.Leo)
+                  0x001f4e                  ___delay32
 
-.text             0x001f54         0x42
- .text            0x001f54         0x16 build/default/production/_ext/1472/mcal_init.o
-                  0x001f54                  _MCAL_vInit
- .text            0x001f6a         0x14 build/default/production/_ext/1472/hal_obstacle.o
-                  0x001f6a                  _HAL_bGetObstacle
-                  0x001f72                  __vSetObstacleFlag
- .text            0x001f7e         0x10 build/default/production/_ext/1472/mcal_osc.o
-                  0x001f7e                  _OSC_vInit
- .text            0x001f8e          0x8 build/default/production/_ext/1472/main.o
-                  0x001f8e                  _main
+.text             0x001f6a         0x42
+ .text            0x001f6a         0x16 build/default/production/_ext/1472/mcal_init.o
+                  0x001f6a                  _MCAL_vInit
+ .text            0x001f80         0x14 build/default/production/_ext/1472/hal_obstacle.o
+                  0x001f80                  _HAL_bGetObstacle
+                  0x001f88                  __vSetObstacleFlag
+ .text            0x001f94         0x10 build/default/production/_ext/1472/mcal_osc.o
+                  0x001f94                  _OSC_vInit
+ .text            0x001fa4          0x8 build/default/production/_ext/1472/main.o
+                  0x001fa4                  _main
