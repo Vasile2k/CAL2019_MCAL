@@ -9,15 +9,16 @@ build/default/production/_ext/1472/sys_tasks.o:  \
 ../mcal_adc.h  \
 ../mcal_pwm.h  \
  ../mcal_interrupts.h  \
+../hal_obstacle.h  \
 ../mcal_spi.h  \
 ../mcal_timers.h  \
-../mcal_encoder.h  \
- ../asw_com.h  \
+ ../mcal_encoder.h  \
+../asw_com.h  \
 ../light_sig.h  \
 ../asw_move.h  \
 ../hal_lf.h  \
-../rte.h  \
- ../hal_dc.h  \
+ ../rte.h  \
+../hal_dc.h  \
 ../hal_servo.h  \
 ../hal_battery.h  \
 ../asw_lf.h  \

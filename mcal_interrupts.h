@@ -9,6 +9,7 @@
 #define	MCAL_INTERRUPTS_H
 
 #include "general.h"
+#include "hal_obstacle.h" // For global obstacle flag
 
 /* Defines of Remappable Pins(RPx) that will be set as INT1, INT2 sources */
 /* RPx from 0 to 25 (RP0...RP25). Set 31 for Input to be tied to Vss (GND) */

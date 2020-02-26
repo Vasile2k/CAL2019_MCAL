@@ -29,6 +29,7 @@
       <itemPath>../asw_lf.h</itemPath>
       <itemPath>../hal_battery.h</itemPath>
       <itemPath>../asw_showbattery.h</itemPath>
+      <itemPath>../hal_obstacle.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -60,6 +61,7 @@
       <itemPath>../asw_lf.c</itemPath>
       <itemPath>../hal_battery.c</itemPath>
       <itemPath>../asw_showbattery.c</itemPath>
+      <itemPath>../hal_obstacle.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -84,7 +86,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="dsPIC33F-GP-MC_DFP" vendor="Microchip" version="1.1.15"/>
+        <pack name="dsPIC33F-GP-MC_DFP" vendor="Microchip" version="1.0.5"/>
       </packs>
       <compileType>
         <linkerTool>
@@ -172,9 +174,6 @@
         <property key="relax" value="false"/>
         <property key="warning-level" value="emit-warnings"/>
       </C30-AS>
-      <C30-CO>
-        <property key="coverage-enable" value=""/>
-      </C30-CO>
       <C30-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="boot-eeprom" value="no_eeprom"/>

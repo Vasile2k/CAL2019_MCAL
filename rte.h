@@ -16,6 +16,7 @@ extern "C" {
 #include "hal_servo.h"
 #include "hal_lf.h"
 #include "hal_battery.h"
+#include "hal_obstacle.h"
     
 #define RTE_vMotorInit HAL_vMotorInit
 #define RTE_vMotorSetDir HAL_vMotorSetDir
@@ -29,6 +30,8 @@ extern "C" {
 #define RTE_vGetLineFollower HAL_vGetLineFollower
     
 #define RTE_f16ReadBatteryPercentage HAL_f16ReadBatteryPercentage
+
+#define RTE_bGetObstacle HAL_bGetObstacle
 
 #ifdef	__cplusplus
 }

@@ -8,4 +8,5 @@ build/default/production/_ext/1472/asw_move.o:  \
  ../mcal_gpio.h  \
 ../hal_servo.h  \
 ../hal_lf.h  \
-../hal_battery.h 
+../hal_battery.h  \
+ ../hal_obstacle.h 

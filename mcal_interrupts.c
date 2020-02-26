@@ -14,6 +14,18 @@ extern BOOL bRF_IRQ;
 void __attribute__((__interrupt__, no_auto_psv)) _INT0Interrupt(void)
 {
     /* Write the code to detect obstacle */
+    
+    /* Clear INT0 flag */
+    IFS0bits.INT0IF = 0;
+    
+    /* 
+     * Set the global obstacle flag to the value of the current edge
+     * 1 for negative edge
+     */
+    _vSetObstacleFlag(INTCON2bits.INT0EP);
+    
+    /* Flip the edge of interrupt */
+    INTCON2bits.INT0EP ^= 1;
 }
 
 
@@ -79,10 +91,10 @@ void INT0_vInit(T_U8 u8Priority)
     IPC0bits.INT0IP = u8Priority;
     /* Clear INT0 interrupt Flag */
     IFS0bits.INT0IF = 0;
-    /* INT0 Enable */
-    IEC0bits.INT0IE = 1;
     /* Interrupt on Neg. Edge */
     INTCON2bits.INT0EP = NEG_EDGE;
+    /* INT0 Enable */
+    IEC0bits.INT0IE = 1;
 }
 
 
