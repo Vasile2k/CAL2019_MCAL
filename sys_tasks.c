@@ -40,20 +40,21 @@ void TASK_5ms()
 
 void TASK_10ms()
 {
-    if(RTE_bGetObstacle()){
-        GPIO_u8WritePortPin(PORT_A, 10, 1);
-    }else{
-        GPIO_u8WritePortPin(PORT_A, 10, 0);
-    }
+//    if(RTE_bGetObstacle()){
+//        GPIO_u8WritePortPin(PORT_A, 10, 1);
+//    }else{
+//        GPIO_u8WritePortPin(PORT_A, 10, 0);
+//    }
+//    ASW_moveUntilObstacle();
 //    light_battery_low();
 //    ASW_vfollowLine();
-//    ASW_vShowBatteryPercentage();
 }
 
 void TASK_100ms()
 { 
 //    ASW_moveAround();
 //    ASW_turnWheels();
+    ASW_vShowBatteryPercentage();
 }
 
 void TASK_500ms()

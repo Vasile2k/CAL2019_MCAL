@@ -9,11 +9,11 @@ void lightOn(){
     GPIO_u8WritePortPin(PORT_A, 10, 1);
 }
 
-#define PERCENT_REFRESH_CYCLES 500
+#define PERCENT_REFRESH_CYCLES 25
 
 void ASW_vShowBatteryPercentage(){
     static T_U16 cycles = 0;
-    static T_U8 percent = 4;
+    static T_F16 percent = 0;
     
     if(cycles < PERCENT_REFRESH_CYCLES){
         if(cycles % 2 == 0){
@@ -26,7 +26,7 @@ void ASW_vShowBatteryPercentage(){
         }
         ++cycles;
     }else{
-        percent = 4;
+        percent = (T_F16)(10.0F*RTE_f16ReadBatteryPercentage());
         cycles = 0;
     }
 }

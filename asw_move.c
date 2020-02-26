@@ -41,6 +41,18 @@ void ASW_moveAround(void){
     ++time;
 }
 
+void ASW_moveUntilObstacle(void){
+    RTE_vMotorSetDir(FORWARD);
+    RTE_vServoSetPosition(90);
+    if(RTE_bGetObstacle()){
+        RTE_vMotorSetSpeed(0);
+    }else{
+        RTE_vMotorSetSpeed(30);   
+    }
+   
+}
+
+
 void ASW_turnWheels(void){
     static T_U16 time = 0;
     

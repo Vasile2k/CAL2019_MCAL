@@ -1,6 +1,5 @@
 #include "hal_battery.h"
 #include "mcal_adc.h"
-#include <limits.h>
 
 /**
  * The ADC channel where the battery feedback is connected
@@ -48,7 +47,7 @@ T_F16 HAL_f16ReadBatteryPercentage(){
     lutType* lut = batteryLookupTable;
     
     // Battery is read via a resistive voltage divider with a 1/4 ratio
-    T_F16 battVoltage = 4*(result*AREF_VOLTAGE/USHRT_MAX);
+    T_F16 battVoltage = 4*(result*AREF_VOLTAGE/0x0FFF);
     for(i = 0; i < (sizeof(batteryLookupTable)/sizeof(batteryLookupTable[0]) - 1); ++i){
         if(battVoltage < lut[i + 1].voltage){
             continue;

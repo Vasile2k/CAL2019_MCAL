@@ -16,6 +16,7 @@ extern "C" {
 extern void ASW_moveInit(void);
 extern void ASW_dirInit(void);
 extern void ASW_moveAround(void);
+extern void ASW_moveUntilObstacle(void);
 extern void ASW_turnWheels(void);
 
 #ifdef	__cplusplus
