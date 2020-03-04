@@ -12,6 +12,8 @@
 extern "C" {
 #endif
 
+#include "general_types.h"
+
 /*
  * Returns the distance passed by the car
  * @return the distance in cm

@@ -31,6 +31,7 @@
       <itemPath>../asw_showbattery.h</itemPath>
       <itemPath>../hal_obstacle.h</itemPath>
       <itemPath>../hal_encoder.h</itemPath>
+      <itemPath>../asw_movedist.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -64,6 +65,7 @@
       <itemPath>../asw_showbattery.c</itemPath>
       <itemPath>../hal_obstacle.c</itemPath>
       <itemPath>../hal_encoder.c</itemPath>
+      <itemPath>../asw_movedist.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -82,7 +84,7 @@
         <targetDevice>dsPIC33FJ128MC804</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PICkit3PlatformTool</platformTool>
+        <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC16</languageToolchain>
         <languageToolchainVersion>1.36</languageToolchainVersion>
         <platform>3</platform>
@@ -751,6 +753,7 @@
         <property key="REAL TIME CLOCK AND CALENDAR" value="true"/>
         <property key="SPI 1" value="true"/>
         <property key="SPI 2" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
         <property key="TIMER1" value="true"/>
         <property key="TIMER2" value="true"/>
         <property key="TIMER3" value="true"/>

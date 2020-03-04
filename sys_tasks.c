@@ -15,6 +15,8 @@
 
 #include "asw_move.h"
 
+#include "asw_movedist.h"
+
 #include "hal_lf.h"
 #include "rte.h"
 #include "asw_lf.h"
@@ -24,8 +26,8 @@ void TASK_Inits()
 {
     MCAL_vInit();
     GPIO_u8SetPortPin(PORT_A, 10, DIGITAL ,OUTPUT);
-//    ASW_moveInit();
-//    ASW_dirInit();
+    ASW_moveInit();
+    ASW_dirInit();
 }
 
 void TASK_1ms()
@@ -54,7 +56,8 @@ void TASK_100ms()
 { 
 //    ASW_moveAround();
 //    ASW_turnWheels();
-    ASW_vShowBatteryPercentage();
+//    ASW_vShowBatteryPercentage();
+    ASW_moveForDistance(10);
 }
 
 void TASK_500ms()

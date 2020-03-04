@@ -61,7 +61,7 @@ void QEI_vResetCount()
 *  Return value     : no return value  the elapsed distance since last call
 ********************************************************************************/
 T_S16 QEI_s16getElapsed(void){
-    T_S16 elapsed = QEI_u16getCount() - RESET_VALUE;
+    T_S16 elapsed = RESET_VALUE - QEI_u16getCount();
     QEI_vResetCount();
     return elapsed;
 }

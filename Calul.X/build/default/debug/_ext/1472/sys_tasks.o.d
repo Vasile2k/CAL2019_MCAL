@@ -16,10 +16,12 @@ build/default/debug/_ext/1472/sys_tasks.o:  \
  ../asw_com.h  \
 ../light_sig.h  \
 ../asw_move.h  \
+../asw_movedist.h  \
 ../hal_lf.h  \
-../rte.h  \
- ../hal_dc.h  \
+ ../rte.h  \
+../hal_dc.h  \
 ../hal_servo.h  \
 ../hal_battery.h  \
-../asw_lf.h  \
- ../asw_showbattery.h 
+../hal_encoder.h  \
+ ../asw_lf.h  \
+../asw_showbattery.h 

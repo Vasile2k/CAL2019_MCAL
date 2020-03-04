@@ -9,4 +9,5 @@ build/default/production/_ext/1472/asw_move.o:  \
 ../hal_servo.h  \
 ../hal_lf.h  \
 ../hal_battery.h  \
- ../hal_obstacle.h 
+ ../hal_obstacle.h  \
+../hal_encoder.h 

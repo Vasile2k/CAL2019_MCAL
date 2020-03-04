@@ -3,18 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/CAL2019_MCAL/mcal_init.h</file>
-            <file>file:/E:/CAL2019_MCAL/light_sig.c</file>
-            <file>file:/E:/CAL2019_MCAL/asw_com.h</file>
-            <file>file:/E:/CAL2019_MCAL/main.c</file>
-            <file>file:/E:/CAL2019_MCAL/hal_battery.c</file>
-            <file>file:/E:/CAL2019_MCAL/asw_move.c</file>
-            <file>file:/E:/CAL2019_MCAL/asw_showbattery.c</file>
-            <file>file:/E:/CAL2019_MCAL/sys_tasks.c</file>
-            <file>file:/E:/CAL2019_MCAL/rte.h</file>
-            <file>file:/E:/CAL2019_MCAL/sys_schedule.c</file>
-            <file>file:/E:/CAL2019_MCAL/hal_battery.h</file>
-            <file>file:/E:/CAL2019_MCAL/asw_showbattery.h</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/hal_encoder.c</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/asw_movedist.h</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/asw_move.h</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/rte.h</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/mcal_encoder.c</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/hal_encoder.h</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/sys_tasks.c</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/asw_movedist.c</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/mcal_encoder.h</file>
+            <file>file:/C:/Users/student/Desktop/CAL2019_MCAL/Calul.X/nbproject/Makefile-default.mk</file>
         </group>
     </open-files>
 </project-private>

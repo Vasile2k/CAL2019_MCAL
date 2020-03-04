@@ -12,7 +12,7 @@
  * The default value given to the pulse counter register
  * Can be basically anything
  */
-#define RESET_VALUE (1 << 15 - 1)
+#define RESET_VALUE  ((1u << 15) - 1)
 
 #include "general.h"
 
