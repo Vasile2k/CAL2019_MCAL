@@ -1,6 +1,5 @@
 #include "mcal_encoder.h"
 
-
 /*******************************************************************************
 *  Function name    : Encoder_vInit
 *  Description      : 1)Initializes the QEI(Quadrature Encoder Interface)
@@ -25,7 +24,7 @@ void QEI_vInit(void)
     /* Encoder enabled (x4 mode) with position counter reset by match(MAXxCNT) */
     QEICONbits.QEIM = 0b111; 
     /* Set count register value around the middle of the possible value range */
-    POS1CNT=32000;
+    POS1CNT = RESET_VALUE;
     /* Count value can be read from POS1CNT register */
 }
 
@@ -34,7 +33,7 @@ void QEI_vInit(void)
 *  Description      : Returns POS1CNT(count register) value        
 *  List of arguments: no arguments
 *  Return value     : T_U16 -> value of POS1CNT.
-*                     POS1CNT is initialized at 32000
+*                     POS1CNT is initialized at RESET_VALUE
 *                     POS1CNT is: incremented when moving backwards
 *                                 decremented when moving forward 
 ********************************************************************************/
@@ -46,15 +45,23 @@ T_U16 QEI_u16getCount()
 
 /*******************************************************************************
 *  Function name    : QEI_vResetCount
-*  Description      : Resets the count register to 32000         
+*  Description      : Resets the count register to RESET_VALUE         
 *  List of arguments: no arguments
 *  Return value     : no return value  
 ********************************************************************************/
 void QEI_vResetCount()
 {
-    POS1CNT=32000;
+    POS1CNT = RESET_VALUE;
 }
 
-
-
-
+/*******************************************************************************
+*  Function name    : QEI_s16getElapsed
+*  Description      : Returns the elapsed distance since last call
+*  List of arguments: no arguments
+*  Return value     : no return value  the elapsed distance since last call
+********************************************************************************/
+T_S16 QEI_s16getElapsed(void){
+    T_S16 elapsed = QEI_u16getCount() - RESET_VALUE;
+    QEI_vResetCount();
+    return elapsed;
+}

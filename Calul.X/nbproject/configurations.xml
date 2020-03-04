@@ -30,6 +30,7 @@
       <itemPath>../hal_battery.h</itemPath>
       <itemPath>../asw_showbattery.h</itemPath>
       <itemPath>../hal_obstacle.h</itemPath>
+      <itemPath>../hal_encoder.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -62,6 +63,7 @@
       <itemPath>../hal_battery.c</itemPath>
       <itemPath>../asw_showbattery.c</itemPath>
       <itemPath>../hal_obstacle.c</itemPath>
+      <itemPath>../hal_encoder.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -86,7 +88,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="dsPIC33F-GP-MC_DFP" vendor="Microchip" version="1.0.5"/>
+        <pack name="dsPIC33F-GP-MC_DFP" vendor="Microchip" version="1.0.6"/>
       </packs>
       <compileType>
         <linkerTool>

@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../asw_com.c ../hal_nRF.c ../main.c ../mcal_adc.c ../mcal_encoder.c ../mcal_gpio.c ../mcal_init.c ../mcal_interrupts.c ../mcal_osc.c ../mcal_pwm.c ../mcal_spi.c ../mcal_timers.c ../sys_schedule.c ../sys_tasks.c ../light_sig.c ../hal_dc.c ../asw_move.c ../hal_servo.c ../math_helper.c ../hal_lf.c ../asw_lf.c ../hal_battery.c ../asw_showbattery.c ../hal_obstacle.c
+SOURCEFILES_QUOTED_IF_SPACED=../asw_com.c ../hal_nRF.c ../main.c ../mcal_adc.c ../mcal_encoder.c ../mcal_gpio.c ../mcal_init.c ../mcal_interrupts.c ../mcal_osc.c ../mcal_pwm.c ../mcal_spi.c ../mcal_timers.c ../sys_schedule.c ../sys_tasks.c ../light_sig.c ../hal_dc.c ../asw_move.c ../hal_servo.c ../math_helper.c ../hal_lf.c ../asw_lf.c ../hal_battery.c ../asw_showbattery.c ../hal_obstacle.c ../hal_encoder.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1472/asw_com.o ${OBJECTDIR}/_ext/1472/hal_nRF.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/mcal_adc.o ${OBJECTDIR}/_ext/1472/mcal_encoder.o ${OBJECTDIR}/_ext/1472/mcal_gpio.o ${OBJECTDIR}/_ext/1472/mcal_init.o ${OBJECTDIR}/_ext/1472/mcal_interrupts.o ${OBJECTDIR}/_ext/1472/mcal_osc.o ${OBJECTDIR}/_ext/1472/mcal_pwm.o ${OBJECTDIR}/_ext/1472/mcal_spi.o ${OBJECTDIR}/_ext/1472/mcal_timers.o ${OBJECTDIR}/_ext/1472/sys_schedule.o ${OBJECTDIR}/_ext/1472/sys_tasks.o ${OBJECTDIR}/_ext/1472/light_sig.o ${OBJECTDIR}/_ext/1472/hal_dc.o ${OBJECTDIR}/_ext/1472/asw_move.o ${OBJECTDIR}/_ext/1472/hal_servo.o ${OBJECTDIR}/_ext/1472/math_helper.o ${OBJECTDIR}/_ext/1472/hal_lf.o ${OBJECTDIR}/_ext/1472/asw_lf.o ${OBJECTDIR}/_ext/1472/hal_battery.o ${OBJECTDIR}/_ext/1472/asw_showbattery.o ${OBJECTDIR}/_ext/1472/hal_obstacle.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1472/asw_com.o.d ${OBJECTDIR}/_ext/1472/hal_nRF.o.d ${OBJECTDIR}/_ext/1472/main.o.d ${OBJECTDIR}/_ext/1472/mcal_adc.o.d ${OBJECTDIR}/_ext/1472/mcal_encoder.o.d ${OBJECTDIR}/_ext/1472/mcal_gpio.o.d ${OBJECTDIR}/_ext/1472/mcal_init.o.d ${OBJECTDIR}/_ext/1472/mcal_interrupts.o.d ${OBJECTDIR}/_ext/1472/mcal_osc.o.d ${OBJECTDIR}/_ext/1472/mcal_pwm.o.d ${OBJECTDIR}/_ext/1472/mcal_spi.o.d ${OBJECTDIR}/_ext/1472/mcal_timers.o.d ${OBJECTDIR}/_ext/1472/sys_schedule.o.d ${OBJECTDIR}/_ext/1472/sys_tasks.o.d ${OBJECTDIR}/_ext/1472/light_sig.o.d ${OBJECTDIR}/_ext/1472/hal_dc.o.d ${OBJECTDIR}/_ext/1472/asw_move.o.d ${OBJECTDIR}/_ext/1472/hal_servo.o.d ${OBJECTDIR}/_ext/1472/math_helper.o.d ${OBJECTDIR}/_ext/1472/hal_lf.o.d ${OBJECTDIR}/_ext/1472/asw_lf.o.d ${OBJECTDIR}/_ext/1472/hal_battery.o.d ${OBJECTDIR}/_ext/1472/asw_showbattery.o.d ${OBJECTDIR}/_ext/1472/hal_obstacle.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1472/asw_com.o ${OBJECTDIR}/_ext/1472/hal_nRF.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/mcal_adc.o ${OBJECTDIR}/_ext/1472/mcal_encoder.o ${OBJECTDIR}/_ext/1472/mcal_gpio.o ${OBJECTDIR}/_ext/1472/mcal_init.o ${OBJECTDIR}/_ext/1472/mcal_interrupts.o ${OBJECTDIR}/_ext/1472/mcal_osc.o ${OBJECTDIR}/_ext/1472/mcal_pwm.o ${OBJECTDIR}/_ext/1472/mcal_spi.o ${OBJECTDIR}/_ext/1472/mcal_timers.o ${OBJECTDIR}/_ext/1472/sys_schedule.o ${OBJECTDIR}/_ext/1472/sys_tasks.o ${OBJECTDIR}/_ext/1472/light_sig.o ${OBJECTDIR}/_ext/1472/hal_dc.o ${OBJECTDIR}/_ext/1472/asw_move.o ${OBJECTDIR}/_ext/1472/hal_servo.o ${OBJECTDIR}/_ext/1472/math_helper.o ${OBJECTDIR}/_ext/1472/hal_lf.o ${OBJECTDIR}/_ext/1472/asw_lf.o ${OBJECTDIR}/_ext/1472/hal_battery.o ${OBJECTDIR}/_ext/1472/asw_showbattery.o ${OBJECTDIR}/_ext/1472/hal_obstacle.o ${OBJECTDIR}/_ext/1472/hal_encoder.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1472/asw_com.o.d ${OBJECTDIR}/_ext/1472/hal_nRF.o.d ${OBJECTDIR}/_ext/1472/main.o.d ${OBJECTDIR}/_ext/1472/mcal_adc.o.d ${OBJECTDIR}/_ext/1472/mcal_encoder.o.d ${OBJECTDIR}/_ext/1472/mcal_gpio.o.d ${OBJECTDIR}/_ext/1472/mcal_init.o.d ${OBJECTDIR}/_ext/1472/mcal_interrupts.o.d ${OBJECTDIR}/_ext/1472/mcal_osc.o.d ${OBJECTDIR}/_ext/1472/mcal_pwm.o.d ${OBJECTDIR}/_ext/1472/mcal_spi.o.d ${OBJECTDIR}/_ext/1472/mcal_timers.o.d ${OBJECTDIR}/_ext/1472/sys_schedule.o.d ${OBJECTDIR}/_ext/1472/sys_tasks.o.d ${OBJECTDIR}/_ext/1472/light_sig.o.d ${OBJECTDIR}/_ext/1472/hal_dc.o.d ${OBJECTDIR}/_ext/1472/asw_move.o.d ${OBJECTDIR}/_ext/1472/hal_servo.o.d ${OBJECTDIR}/_ext/1472/math_helper.o.d ${OBJECTDIR}/_ext/1472/hal_lf.o.d ${OBJECTDIR}/_ext/1472/asw_lf.o.d ${OBJECTDIR}/_ext/1472/hal_battery.o.d ${OBJECTDIR}/_ext/1472/asw_showbattery.o.d ${OBJECTDIR}/_ext/1472/hal_obstacle.o.d ${OBJECTDIR}/_ext/1472/hal_encoder.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1472/asw_com.o ${OBJECTDIR}/_ext/1472/hal_nRF.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/mcal_adc.o ${OBJECTDIR}/_ext/1472/mcal_encoder.o ${OBJECTDIR}/_ext/1472/mcal_gpio.o ${OBJECTDIR}/_ext/1472/mcal_init.o ${OBJECTDIR}/_ext/1472/mcal_interrupts.o ${OBJECTDIR}/_ext/1472/mcal_osc.o ${OBJECTDIR}/_ext/1472/mcal_pwm.o ${OBJECTDIR}/_ext/1472/mcal_spi.o ${OBJECTDIR}/_ext/1472/mcal_timers.o ${OBJECTDIR}/_ext/1472/sys_schedule.o ${OBJECTDIR}/_ext/1472/sys_tasks.o ${OBJECTDIR}/_ext/1472/light_sig.o ${OBJECTDIR}/_ext/1472/hal_dc.o ${OBJECTDIR}/_ext/1472/asw_move.o ${OBJECTDIR}/_ext/1472/hal_servo.o ${OBJECTDIR}/_ext/1472/math_helper.o ${OBJECTDIR}/_ext/1472/hal_lf.o ${OBJECTDIR}/_ext/1472/asw_lf.o ${OBJECTDIR}/_ext/1472/hal_battery.o ${OBJECTDIR}/_ext/1472/asw_showbattery.o ${OBJECTDIR}/_ext/1472/hal_obstacle.o
+OBJECTFILES=${OBJECTDIR}/_ext/1472/asw_com.o ${OBJECTDIR}/_ext/1472/hal_nRF.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1472/mcal_adc.o ${OBJECTDIR}/_ext/1472/mcal_encoder.o ${OBJECTDIR}/_ext/1472/mcal_gpio.o ${OBJECTDIR}/_ext/1472/mcal_init.o ${OBJECTDIR}/_ext/1472/mcal_interrupts.o ${OBJECTDIR}/_ext/1472/mcal_osc.o ${OBJECTDIR}/_ext/1472/mcal_pwm.o ${OBJECTDIR}/_ext/1472/mcal_spi.o ${OBJECTDIR}/_ext/1472/mcal_timers.o ${OBJECTDIR}/_ext/1472/sys_schedule.o ${OBJECTDIR}/_ext/1472/sys_tasks.o ${OBJECTDIR}/_ext/1472/light_sig.o ${OBJECTDIR}/_ext/1472/hal_dc.o ${OBJECTDIR}/_ext/1472/asw_move.o ${OBJECTDIR}/_ext/1472/hal_servo.o ${OBJECTDIR}/_ext/1472/math_helper.o ${OBJECTDIR}/_ext/1472/hal_lf.o ${OBJECTDIR}/_ext/1472/asw_lf.o ${OBJECTDIR}/_ext/1472/hal_battery.o ${OBJECTDIR}/_ext/1472/asw_showbattery.o ${OBJECTDIR}/_ext/1472/hal_obstacle.o ${OBJECTDIR}/_ext/1472/hal_encoder.o
 
 # Source Files
-SOURCEFILES=../asw_com.c ../hal_nRF.c ../main.c ../mcal_adc.c ../mcal_encoder.c ../mcal_gpio.c ../mcal_init.c ../mcal_interrupts.c ../mcal_osc.c ../mcal_pwm.c ../mcal_spi.c ../mcal_timers.c ../sys_schedule.c ../sys_tasks.c ../light_sig.c ../hal_dc.c ../asw_move.c ../hal_servo.c ../math_helper.c ../hal_lf.c ../asw_lf.c ../hal_battery.c ../asw_showbattery.c ../hal_obstacle.c
+SOURCEFILES=../asw_com.c ../hal_nRF.c ../main.c ../mcal_adc.c ../mcal_encoder.c ../mcal_gpio.c ../mcal_init.c ../mcal_interrupts.c ../mcal_osc.c ../mcal_pwm.c ../mcal_spi.c ../mcal_timers.c ../sys_schedule.c ../sys_tasks.c ../light_sig.c ../hal_dc.c ../asw_move.c ../hal_servo.c ../math_helper.c ../hal_lf.c ../asw_lf.c ../hal_battery.c ../asw_showbattery.c ../hal_obstacle.c ../hal_encoder.c
 
 
 CFLAGS=
@@ -262,6 +262,13 @@ ${OBJECTDIR}/_ext/1472/hal_obstacle.o: ../hal_obstacle.c  nbproject/Makefile-${C
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../hal_obstacle.c  -o ${OBJECTDIR}/_ext/1472/hal_obstacle.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/hal_obstacle.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/hal_obstacle.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+${OBJECTDIR}/_ext/1472/hal_encoder.o: ../hal_encoder.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
+	@${RM} ${OBJECTDIR}/_ext/1472/hal_encoder.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1472/hal_encoder.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../hal_encoder.c  -o ${OBJECTDIR}/_ext/1472/hal_encoder.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/hal_encoder.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/hal_encoder.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
 else
 ${OBJECTDIR}/_ext/1472/asw_com.o: ../asw_com.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
@@ -430,6 +437,13 @@ ${OBJECTDIR}/_ext/1472/hal_obstacle.o: ../hal_obstacle.c  nbproject/Makefile-${C
 	@${RM} ${OBJECTDIR}/_ext/1472/hal_obstacle.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../hal_obstacle.c  -o ${OBJECTDIR}/_ext/1472/hal_obstacle.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/hal_obstacle.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/hal_obstacle.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/_ext/1472/hal_encoder.o: ../hal_encoder.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
+	@${RM} ${OBJECTDIR}/_ext/1472/hal_encoder.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1472/hal_encoder.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../hal_encoder.c  -o ${OBJECTDIR}/_ext/1472/hal_encoder.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/hal_encoder.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/hal_encoder.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 

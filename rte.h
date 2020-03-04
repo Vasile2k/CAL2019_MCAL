@@ -17,6 +17,7 @@ extern "C" {
 #include "hal_lf.h"
 #include "hal_battery.h"
 #include "hal_obstacle.h"
+#include "hal_encoder.h"
     
 #define RTE_vMotorInit HAL_vMotorInit
 #define RTE_vMotorSetDir HAL_vMotorSetDir
