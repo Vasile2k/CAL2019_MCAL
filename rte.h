@@ -33,6 +33,8 @@ extern "C" {
 #define RTE_f16ReadBatteryPercentage HAL_f16ReadBatteryPercentage
 
 #define RTE_bGetObstacle HAL_bGetObstacle
+    
+#define RTE_f16GetElapsedDistance HAL_f16GetElapsedDistance
 
 #ifdef	__cplusplus
 }
